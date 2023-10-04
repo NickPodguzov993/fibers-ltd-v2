@@ -45,7 +45,7 @@ export function Footer({
               {links.map(({ title, link }) => (
                 <li key={title} className="flex">
                   <Link
-                    className="w-full py-4 rounded-xs font-bold text-dark hover:bg-accent/10 focus:bg-accent/10 transition-colors"
+                    className="w-full py-4 rounded-xs font-bold text-dark hover:bg-accent/10 active:bg-accent/10 transition-colors"
                     href={link}
                   >
                     {title}

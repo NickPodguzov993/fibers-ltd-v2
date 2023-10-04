@@ -6,7 +6,7 @@ export default function Home() {
     <div className="container pt-10 lg:pt-0 flex flex-col gap-20 lg:gap-40">
       <Hero {...content.hero} />
       <Metrics data={content.metrics} />
-      <div className="h-[2000px] bg-accent/10">Hello world</div>
+      <div className="h-[100rem] bg-accent/10">Hello world</div>
     </div>
   );
 }
