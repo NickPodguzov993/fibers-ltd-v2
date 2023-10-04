@@ -14,9 +14,11 @@ const config: Config = {
       },
       padding: {
         DEFAULT: "16px",
+        xl: "0",
       },
     },
     borderRadius: {
+      xs: "10px",
       sm: "20px",
       DEFAULT: "30px",
       md: "40px",
@@ -24,7 +26,9 @@ const config: Config = {
     },
     backgroundColor: {
       white: "#FFF",
+      gray: "#F5F5F5",
       accent: "#FF1744",
+      filler: "#D9D9D9",
     },
     borderColor: {
       primary: "#E0E0E0",
@@ -35,9 +39,16 @@ const config: Config = {
       accent: "#FF1744",
       dark: "#212121",
     },
+    fontFamily: {
+      sans: `Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+    },
     lineHeight: {
-      DEFAULT: "1",
+      none: "1",
       paragraph: "1.6",
+    },
+    letterSpacing: {
+      DEFAULT: "0",
+      title: "0.04em",
     },
     backdropBlur: {
       DEFAULT: "5px",

@@ -14,7 +14,7 @@ export function PrimaryButton({
   return (
     <button
       className={clsx(
-        "p-4 font-bold text-accent border-2 border-accent rounded-sm hover:bg-accent/10 transition-colors",
+        "p-4 font-bold text-accent border-2 border-accent rounded-sm hover:bg-accent/10 focus:bg-accent/10 transition-colors",
         className
       )}
       onClick={onClick}
