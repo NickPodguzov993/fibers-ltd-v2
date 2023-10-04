@@ -4,7 +4,7 @@ import { Footer } from "./Footer";
 
 export function Layout({ children }: PropsWithChildren) {
   return (
-    <div className="relative">
+    <div className="">
       <Header />
       {children}
       <Footer />

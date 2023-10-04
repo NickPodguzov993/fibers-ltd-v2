@@ -12,6 +12,9 @@ const config: Config = {
       screens: {
         xl: "1280px",
       },
+      padding: {
+        DEFAULT: "16px",
+      },
     },
     borderRadius: {
       sm: "20px",

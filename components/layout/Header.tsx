@@ -15,8 +15,8 @@ const links = [
 
 export function Header() {
   return (
-    <div className="container lg:px-4 xl:px-2 2xl:px-0">
-      <div className="sticky top-0 lg:top-4 lg:my-4 px-4 py-2 lg:p-4 flex justify-between items-center rounded-b lg:rounded bg-white/50 lg:bg-white/70 backdrop-blur lg:border lg:border-dashed lg:border-primary">
+    <div className="fixed inset-x-0 top-0 lg:top-4 flex p-0 lg:px-4">
+      <div className="container mx-auto w-full px-4 py-2 lg:p-4 flex justify-between items-center rounded-b lg:rounded bg-white/50 lg:bg-white/70 backdrop-blur lg:border lg:border-dashed lg:border-primary">
         <Link href="/">
           <Image
             className="h-10 object-contain object-left lg:h-12"
