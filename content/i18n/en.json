@@ -1,0 +1,55 @@
+{
+  "layout": {
+    "header": {
+      "logo": "/images/logo.png",
+      "links": [
+        { "title": "About us", "link": "#" },
+        { "title": "Vacancies", "link": "#" },
+        { "title": "Contacts", "link": "#" },
+        { "title": "Policies", "link": "#" }
+      ],
+      "signup": "Sign up",
+      "login": "Log in"
+    },
+    "footer": {
+      "email": "support@daniertech.com",
+      "phone": "+85256474293",
+      "navigation": [
+        {
+          "title": "About company",
+          "links": [
+            { "title": "Privacy", "link": "#" },
+            { "title": "Disclosure of risks", "link": "#" },
+            { "title": "Commissions and fees", "link": "#" }
+          ]
+        },
+        {
+          "title": "Policies",
+          "links": [
+            { "title": "Terms of use", "link": "#" },
+            { "title": "Privacy", "link": "#" },
+            { "title": "Disclosure of risks", "link": "#" },
+            { "title": "Commissions and feesme", "link": "#" }
+          ]
+        }
+      ],
+      "licenses": [
+        "UNI: Unit 04, 7/f, Bright way, Tower, no 33 Mong kok road, Kowloon, Hong Kong",
+        "29 June 2016 MS Ada L L CHUNG Registrar of Companies Hong Kong Special Administrative Region"
+      ],
+      "copyright": "2016 - 2023 © DANIER LTD.DANIER LIMITED"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fibers\nSecure & Easy\nto use",
+      "image": null
+    },
+    "metrics": [
+      { "title": "daily traffic1", "value": "4,55 bln+" },
+      { "title": "daily traffic2", "value": "240+" },
+      { "title": "daily traffic3", "value": "13" },
+      { "title": "daily traffic4", "value": "16 000+" }
+    ]
+  }
+}

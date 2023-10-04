@@ -1,8 +1,10 @@
+import "./globals.css";
 import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
 // import { Inter } from 'next/font/google'
+
+import { PropsWithLanguage, i18n } from "@/lib/i18n";
 import { Layout } from "@/components/layout";
-import "./globals.css";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -11,13 +13,22 @@ export const metadata: Metadata = {
   description: "Make advertisements great again",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
+type RootLayoutProps = PropsWithChildren & PropsWithLanguage;
+
+export default function RootLayout({
+  children,
+  params: { lang },
+}: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
       // className={inter.className}
       >
-        <Layout>{children}</Layout>
+        <Layout lang={lang}>{children}</Layout>
       </body>
     </html>
   );

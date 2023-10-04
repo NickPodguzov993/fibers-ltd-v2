@@ -1,5 +1,6 @@
 type HeroProps = {
   title: string;
+  image: null;
 };
 
 export function Hero({ title }: HeroProps) {

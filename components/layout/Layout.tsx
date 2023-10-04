@@ -1,15 +1,19 @@
 import { PropsWithChildren } from "react";
-import content from "@/content/layout.json";
-
+import { Locale, getDictionary } from "@/lib/i18n";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 
-export function Layout({ children }: PropsWithChildren) {
+type LayoutProps = PropsWithChildren & {
+  lang: Locale;
+};
+
+export async function Layout({ lang, children }: LayoutProps) {
+  const dict = await getDictionary(lang);
   return (
     <div className="pt-[120px] lg:pt-40">
-      <Header {...content.header} />
+      <Header {...dict.layout.header} />
       {children}
-      <Footer {...content.footer} />
+      <Footer {...dict.layout.footer} />
     </div>
   );
 }
