@@ -55,9 +55,8 @@ export function Products({
     setDomReady(true);
   }, []);
   useEffect(() => {
-    setTimeout(() => {
-      instanceRef.current?.moveToIdx(0);
-    });
+    instanceRef.current?.update();
+    instanceRef.current?.moveToIdx(0);
   }, [instanceRef, filteredProducts]);
 
   function onCategoryChange(category: string) {
@@ -90,7 +89,10 @@ export function Products({
       </div>
       {isMobile && domReady ? (
         <div className="flex flex-col gap-2">
-          <div ref={sliderRef} className="keen-slider transition-[height_0.3s]">
+          <div
+            ref={sliderRef}
+            className="keen-slider !overflow-visible transition-[height_0.3s]"
+          >
             {filteredProducts.map((product, idx) => (
               <ProductCard
                 className="keen-slider__slide !min-h-[auto] h-fit"
