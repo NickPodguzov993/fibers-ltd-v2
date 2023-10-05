@@ -35,7 +35,7 @@ const config: Config = {
       accent: "#FF1744",
     },
     textColor: {
-      primary: "#000",
+      white: "#FFF",
       accent: "#FF1744",
       dark: "#212121",
     },
