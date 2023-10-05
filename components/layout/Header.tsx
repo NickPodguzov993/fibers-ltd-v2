@@ -25,11 +25,12 @@ export function Header({ logo, links, signup, login }: HeaderProps) {
       <div className="container mx-auto w-full px-4 py-2 lg:p-4 flex justify-between items-center rounded-b lg:rounded bg-white/50 lg:bg-white/70 backdrop-blur lg:border lg:border-dashed lg:border-primary">
         <Link href="/">
           <Image
-            className="h-10 w-auto object-contain object-left lg:h-12"
+            className="h-10 w-auto lg:h-12"
             src={logo}
             alt="logo"
             width={236}
             height={48}
+            priority={true}
             unoptimized
           />
         </Link>

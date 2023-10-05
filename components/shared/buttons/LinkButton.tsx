@@ -8,7 +8,7 @@ type LinkButtonProps = PropsWithChildren & {
 export function LinkButton({ href, children }: LinkButtonProps) {
   return (
     <Link
-      className="p-4 font-bold leading-paragraph text-dark hover:text-accent transition-colors"
+      className="p-4 font-bold leading-none text-dark hover:text-accent transition-colors"
       href={href}
     >
       {children}

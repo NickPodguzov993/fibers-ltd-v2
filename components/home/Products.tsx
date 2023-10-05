@@ -1,13 +1,13 @@
 "use client";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { useKeenSlider } from "keen-slider/react";
 import { useMediaQuery } from "usehooks-ts";
+import { useKeenSlider } from "keen-slider/react";
+import { Masonry } from "react-plock";
 
 import { AdaptiveHeightPlugin } from "@/lib/slider";
 import { Tab } from "../shared/tab";
 import { ProductCard } from "./ProductCard";
-import { Masonry } from "react-plock";
 
 type ProductsProps = {
   title: string;
@@ -28,7 +28,7 @@ export function Products({
   categories,
   products,
 }: ProductsProps) {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 1023px)");
   const [domReady, setDomReady] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -38,7 +38,7 @@ export function Products({
     {
       slides: {
         perView: 1,
-        spacing: 20,
+        spacing: 16,
         origin: "center",
       },
       created() {
@@ -90,10 +90,7 @@ export function Products({
       </div>
       {isMobile && domReady ? (
         <div className="flex flex-col gap-2">
-          <div
-            ref={sliderRef}
-            className="keen-slider transition-[height_0.3s] z-0"
-          >
+          <div ref={sliderRef} className="keen-slider transition-[height_0.3s]">
             {filteredProducts.map((product, idx) => (
               <ProductCard
                 className="keen-slider__slide !min-h-[auto] h-fit"
@@ -129,7 +126,6 @@ export function Products({
           render={(product, idx) => {
             return (
               <ProductCard
-                className=""
                 key={idx}
                 idx={filteredProducts.findIndex(
                   (p) => p.title === product.title

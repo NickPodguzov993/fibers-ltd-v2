@@ -17,7 +17,7 @@ export function Footer({
   copyright,
 }: FooterProps) {
   return (
-    <div className="container flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 px-4 py-8 lg:p-12 bg-gray rounded-t">
+    <div className="container flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 pt-4 pb-16 py-8 lg:p-12 bg-gray rounded-t">
       <div className="flex flex-col gap-8 lg:gap-2">
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-between lg:items-center">
           <a

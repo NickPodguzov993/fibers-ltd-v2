@@ -131,6 +131,83 @@
           "image": ""
         }
       ]
+    },
+    "values": {
+      "title": "Our values",
+      "values": [
+        {
+          "title": "Value #1",
+          "image": "",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "title": "Value #2",
+          "image": "",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "title": "Value #3",
+          "image": "",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
+    },
+    "reviews": {
+      "title": "Experts about us",
+      "description": "Ad formats",
+      "reviews": [
+        {
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "image": "",
+          "name": "Name Surname",
+          "position": "Head of long position name",
+          "photo": ""
+        },
+        {
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "image": "",
+          "name": "Name Surname",
+          "position": "Head of ...",
+          "photo": ""
+        },
+        {
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "image": "",
+          "name": "Name Surname",
+          "position": "Head of ...",
+          "photo": ""
+        },
+        {
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "image": "",
+          "name": "Name Surname",
+          "position": "Head of ...",
+          "photo": ""
+        }
+      ]
+    },
+    "clients": {
+      "title": "Our client",
+      "clients": [
+        { "title": "client #1", "image": "" },
+        { "title": "client #2", "image": "" },
+        { "title": "client #3", "image": "" },
+        { "title": "client #4", "image": "" },
+        { "title": "client #5", "image": "" },
+        { "title": "client #6", "image": "" },
+        { "title": "client #7", "image": "" }
+      ]
+    },
+    "directions": {
+      "title": "Our directions",
+      "description": "Ad formats",
+      "directions": [
+        { "title": "Dating", "image": "" },
+        { "title": "App downloads", "image": "" },
+        { "title": "Desktop downloads", "image": "" },
+        { "title": "E-commerce", "image": "" },
+        { "title": "Games", "image": "" }
+      ]
     }
   }
 }

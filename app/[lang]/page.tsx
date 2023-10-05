@@ -1,5 +1,13 @@
 import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
-import { Hero, Metrics, Products } from "@/components/home";
+import {
+  Clients,
+  Directions,
+  Hero,
+  Metrics,
+  Products,
+  Reviews,
+  Values,
+} from "@/components/home";
 
 export default async function Home({ params: { lang } }: PropsWithLanguage) {
   const dict = await getDictionary(lang);
@@ -9,7 +17,10 @@ export default async function Home({ params: { lang } }: PropsWithLanguage) {
       <Hero {...dict.home.hero} />
       <Metrics data={dict.home.metrics} />
       <Products {...dict.home.products} />
-      <div className="h-[100rem] bg-accent/10">Hello world</div>
+      <Values {...dict.home.values} />
+      <Reviews {...dict.home.reviews} />
+      <Clients {...dict.home.clients} />
+      <Directions {...dict.home.directions} />
     </div>
   );
 }

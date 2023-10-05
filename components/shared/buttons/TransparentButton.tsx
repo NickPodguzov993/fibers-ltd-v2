@@ -14,7 +14,7 @@ export function TransparentButton({
   return (
     <button
       className={clsx(
-        "p-4 font-bold leading-paragraph text-dark hover:text-accent transition-colors",
+        "p-4 font-bold leading-none text-dark hover:text-accent transition-colors",
         className
       )}
       onClick={onClick}
