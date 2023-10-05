@@ -8,7 +8,7 @@ type MobileNavProps = {
 
 export function MobileNav({ buttons }: MobileNavProps) {
   return (
-    <div className="lg:hidden flex fixed bottom-0 inset-x-0 bg-white/50 rounded-t-sm">
+    <div className="lg:hidden flex fixed bottom-0 inset-x-0 bg-white/50 rounded-t-sm z-50">
       {buttons.map(({ title, icon, activeIcon, link }, idx) => {
         const isActive = idx === 0;
         return (

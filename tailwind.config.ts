@@ -28,6 +28,7 @@ const config: Config = {
       white: "#FFF",
       gray: "#F5F5F5",
       accent: "#FF1744",
+      "accent-light": "#FF4073",
       filler: "#D9D9D9",
     },
     borderColor: {

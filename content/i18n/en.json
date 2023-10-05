@@ -82,6 +82,55 @@
       { "title": "daily traffic2", "value": "240+" },
       { "title": "daily traffic3", "value": "13" },
       { "title": "daily traffic4", "value": "16 000+" }
-    ]
+    ],
+    "products": {
+      "title": "Our products",
+      "description": "Ad formats",
+      "categories": ["Category 1", "Category 2", "Category 3"],
+      "products": [
+        {
+          "title": "Product 1",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 1",
+          "image": ""
+        },
+        {
+          "title": "Product 2",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 1",
+          "image": ""
+        },
+        {
+          "title": "Product 3",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 2",
+          "image": ""
+        },
+        {
+          "title": "Product 4",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 2",
+          "image": ""
+        },
+        {
+          "title": "Product 5",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 3",
+          "image": ""
+        },
+        {
+          "title": "Product 6",
+          "volume": "over 10M imperssions",
+          "minBid": "starts at 0.5$ CPM",
+          "category": "Category 3",
+          "image": ""
+        }
+      ]
+    }
   }
 }
