@@ -11,4 +11,5 @@
 
 ---
 
+- [ ] Update header
 - [ ] Replace logo image

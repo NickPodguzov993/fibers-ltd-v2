@@ -3,10 +3,10 @@
     "header": {
       "logo": "/images/logo.png",
       "links": [
-        { "title": "关于我们", "link": "#" },
-        { "title": "职位空缺", "link": "#" },
-        { "title": "联系方式", "link": "#" },
-        { "title": "政策", "link": "#" }
+        { "title": "关于我们", "link": "/zh/about-us" },
+        { "title": "职位空缺", "link": "/zh/vacancies" },
+        { "title": "联系方式", "link": "/zh/contacts" },
+        { "title": "政策", "link": "/zh/policies" }
       ],
       "signup": "报名",
       "login": "登录"
@@ -209,5 +209,23 @@
         { "title": "Games", "image": "" }
       ]
     }
+  },
+  "aboutUs": {},
+  "vacancies": {},
+  "contancts": {},
+  "policies": {
+    "title": "All policies",
+    "docs": [
+      {
+        "title": "Terms and Conditions",
+        "slug": "terms-and-conditions",
+        "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+      },
+      {
+        "title": "Privacy Policy",
+        "slug": "privacy-policy",
+        "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+      }
+    ]
   }
 }

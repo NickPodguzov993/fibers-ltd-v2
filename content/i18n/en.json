@@ -3,10 +3,10 @@
     "header": {
       "logo": "/images/logo.png",
       "links": [
-        { "title": "About us", "link": "#" },
-        { "title": "Vacancies", "link": "#" },
-        { "title": "Contacts", "link": "#" },
-        { "title": "Policies", "link": "#" }
+        { "title": "About us", "link": "/en/about-us" },
+        { "title": "Vacancies", "link": "/en/vacancies" },
+        { "title": "Contacts", "link": "/en/contacts" },
+        { "title": "Policies", "link": "/en/policies" }
       ],
       "signup": "Sign up",
       "login": "Log in"
@@ -209,5 +209,23 @@
         { "title": "Games", "image": "" }
       ]
     }
+  },
+  "aboutUs": {},
+  "vacancies": {},
+  "contancts": {},
+  "policies": {
+    "title": "All policies",
+    "docs": [
+      {
+        "title": "Terms and Conditions",
+        "slug": "terms-and-conditions",
+        "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+      },
+      {
+        "title": "Privacy Policy",
+        "slug": "privacy-policy",
+        "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+      }
+    ]
   }
 }
