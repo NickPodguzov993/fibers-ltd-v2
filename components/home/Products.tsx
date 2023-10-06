@@ -119,24 +119,26 @@ export function Products({
           )}
         </div>
       ) : (
-        <Masonry
-          items={filteredProducts}
-          config={{
-            columns: 3,
-            gap: 16,
-          }}
-          render={(product, idx) => {
-            return (
-              <ProductCard
-                key={idx}
-                idx={filteredProducts.findIndex(
-                  (p) => p.title === product.title
-                )}
-                {...product}
-              />
-            );
-          }}
-        />
+        domReady && (
+          <Masonry
+            items={filteredProducts}
+            config={{
+              columns: 3,
+              gap: 16,
+            }}
+            render={(product, idx) => {
+              return (
+                <ProductCard
+                  key={idx}
+                  idx={filteredProducts.findIndex(
+                    (p) => p.title === product.title
+                  )}
+                  {...product}
+                />
+              );
+            }}
+          />
+        )
       )}
     </div>
   );
