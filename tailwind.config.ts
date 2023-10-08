@@ -31,9 +31,11 @@ const config: Config = {
       "accent-light": "#FF4073",
       filler: "#D9D9D9",
       dark: "#212121",
+      violet: "#F9F8FF",
+      pink: "#FEF6FF",
     },
     borderColor: {
-      primary: "#E0E0E0",
+      primary: "#F5F5F5",
       accent: "#FF376C",
       error: "#E53935",
     },
@@ -48,7 +50,8 @@ const config: Config = {
       dark: "#212121",
     },
     fontFamily: {
-      sans: `Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+      sans: `Rubik, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+      intern: `Intern, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
     },
     lineHeight: {
       none: "normal",
@@ -60,6 +63,7 @@ const config: Config = {
     },
     boxShadow: {
       modal: "0px 8px 8px 0px rgba(0, 0, 0, 0.10)",
+      card: "0px 8px 8px 0px rgba(33, 33, 33, 0.05)",
     },
     backdropBlur: {
       // TODO: remove

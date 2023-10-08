@@ -8,9 +8,19 @@ export default async function PoliciesLayout({
   // const dict = await getDictionary(lang);
 
   return (
-    <div className="container pt-10 lg:pt-0 flex flex-col lg:flex-row-reverse gap-8 lg:gap-16">
-      <div className="lg:flex-1">Policies</div>
-      <div className="lg:w-[800px] flex-shrink-0">{children}</div>
+    <div className="relative container flex gap-8 lg:gap-16">
+      <div className="fixed top-16 lg:top-auto lg:right-10 lg:flex-1 flex flex-col gap-4">
+        <h2 className="hidden md:inline lg:text-[32px] font-intern font-bold text-dark">
+          All policies
+        </h2>
+        <div>tabs</div>
+      </div>
+      <div className="lg:w-[800px] flex-shrink-0">
+        <h2 className="text-[32px] lg:text-[64px] font-intern font-bold text-dark">
+          Policies
+        </h2>
+        {children}
+      </div>
     </div>
   );
 }

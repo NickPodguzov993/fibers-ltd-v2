@@ -50,7 +50,6 @@ export function Navigation({
               width={236}
               height={48}
               priority={true}
-              unoptimized
             />
           </Link>
           <div className="flex">

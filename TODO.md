@@ -11,5 +11,6 @@
 
 ---
 
+- [ ] Forgot password
 - [ ] Update header, footer
 - [ ] Replace logo image
