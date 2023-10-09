@@ -23,7 +23,7 @@ export default async function Contacts({
   // const dict = await getDictionary(lang);
 
   function getColor(idx: number) {
-    return !idx ? "bg-violet" : "bg-pink";
+    return !idx ? "bg-light-violet" : "bg-light-pink";
   }
   return (
     <div className="container max-w-[800px] pt-10 lg:pt-0 flex flex-col gap-8">

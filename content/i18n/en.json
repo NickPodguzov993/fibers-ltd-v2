@@ -12,32 +12,34 @@
       "login": "Log in"
     },
     "footer": {
-      "email": "support@daniertech.com",
-      "phone": "+85256474293",
+      "email": "info@fibersltd.com",
+      "contact": "Contact us",
+      "phone": "+35799 930263",
       "navigation": [
         {
-          "title": "About company",
+          "title": "About",
           "links": [
-            { "title": "Privacy", "link": "#" },
-            { "title": "Disclosure of risks", "link": "#" },
-            { "title": "Commissions and fees", "link": "#" }
+            { "title": "About us", "link": "/en/about-us" },
+            { "title": "Vacancies", "link": "/en/vacancies" },
+            { "title": "Contacts", "link": "/en/contacts" }
           ]
         },
         {
           "title": "Policies",
           "links": [
-            { "title": "Terms of use", "link": "#" },
-            { "title": "Privacy", "link": "#" },
-            { "title": "Disclosure of risks", "link": "#" },
-            { "title": "Commissions and feesme", "link": "#" }
+            {
+              "title": "Terms and Conditions",
+              "link": "/en/policies/terms-and-conditions"
+            },
+            { "title": "Privacy Policy", "link": "/en/policies/privacy-policy" }
           ]
         }
       ],
       "licenses": [
-        "UNI: Unit 04, 7/f, Bright way, Tower, no 33 Mong kok road, Kowloon, Hong Kong",
-        "29 June 2016 MS Ada L L CHUNG Registrar of Companies Hong Kong Special Administrative Region"
+        "176 Joo Chiat Road #02-02, Singapore (427447)",
+        "Registration number: 201922390D"
       ],
-      "copyright": "2016 - 2023 © DANIER LTD.DANIER LIMITED"
+      "copyright": "© Copyright 2023. Fibers PTE LTD"
     },
     "mobileNav": [
       {

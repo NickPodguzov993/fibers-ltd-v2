@@ -11,7 +11,7 @@ type LayoutProps = PropsWithChildren & {
 export async function Layout({ lang, children }: LayoutProps) {
   const dict = await getDictionary(lang);
   return (
-    <div className="pt-[120px] lg:pt-40">
+    <div className="pt-[120px] lg:pt-40 overflow-hidden">
       <Navigation {...dict.layout.header} mobileNav={dict.layout.mobileNav} />
       {children}
       <Footer {...dict.layout.footer} />

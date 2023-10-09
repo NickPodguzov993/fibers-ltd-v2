@@ -2,6 +2,27 @@ import { PrimaryButton } from "@/components/shared/buttons";
 import { PropsWithLanguage } from "@/lib/i18n";
 import Link from "next/link";
 
+const vacancies = [
+  {
+    title: "Vacancy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    tags: ["Remote", "Without expirience", "Another tag"],
+  },
+  {
+    title: "Vacancy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    tags: ["Remote", "Without expirience", "Another tag"],
+  },
+  {
+    title: "Vacancy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    tags: ["Remote", "Without expirience", "Another tag"],
+  },
+];
+
 export default async function Vacancies({
   params: { lang },
 }: PropsWithLanguage) {
@@ -22,23 +43,7 @@ export default async function Vacancies({
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          {[
-            {
-              title: "Dev",
-              description: "lorem ipsum",
-              tags: ["cool lon long", "remote sdafadf", "job asdf"],
-            },
-            {
-              title: "Dev",
-              description: "lorem ipsum",
-              tags: ["cool lon long", "remote sdafadf", "job asdf"],
-            },
-            {
-              title: "Dev",
-              description: "lorem ipsum",
-              tags: ["cool lon long", "remote sdafadf", "job asdf"],
-            },
-          ].map(({ title, description, tags }, idx) => (
+          {vacancies.map(({ title, description, tags }, idx) => (
             <Link
               className="p-8 flex flex-col gap-5 lg:gap-6 rounded border-2 border-primary transition-shadow hover:shadow-card"
               key={idx}

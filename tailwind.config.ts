@@ -23,6 +23,7 @@ const config: Config = {
       DEFAULT: "30px",
       md: "40px",
       lg: "50px",
+      xl: "60px",
     },
     backgroundColor: {
       white: "#FFF",
@@ -31,8 +32,12 @@ const config: Config = {
       "accent-light": "#FF4073",
       filler: "#D9D9D9",
       dark: "#212121",
-      violet: "#F9F8FF",
-      pink: "#FEF6FF",
+      violet: "#F3F1FF",
+      "light-violet": "#F9F8FF",
+      pink: "#FDEAFF",
+      "light-pink": "#FEF6FF",
+      green: "#DAFFD8",
+      "light-green": "#F1FFF0",
     },
     borderColor: {
       primary: "#F5F5F5",
