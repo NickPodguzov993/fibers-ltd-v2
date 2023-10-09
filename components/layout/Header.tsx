@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { PrimaryButton, LinkButton } from "../shared/buttons";
 import { SignupModal } from "./SignupModal";
 import { LoginModal } from "./LoginModal";
+import { MobileMenuModal } from "./MobileMenuModal";
 
 type HeaderProps = {
   logo: string;
@@ -19,6 +20,7 @@ type HeaderProps = {
 export function Header({ logo, links, signup, login }: HeaderProps) {
   const [isLoginOpened, setLoginOpened] = useState(false);
   const [isSignupOpened, setSignupOpened] = useState(false);
+  const [isMenuOpened, setMenuOpened] = useState(false);
   const pathName = usePathname();
   const isEng = pathName.startsWith("/en");
 
@@ -76,14 +78,26 @@ export function Header({ logo, links, signup, login }: HeaderProps) {
               >
                 {isEng ? "Eng" : "中文"}
               </LinkButton>
-              <button className="px-2 py-4 flex lg:hidden justify-center items-center">
+              <button
+                className="px-2 py-4 flex lg:hidden justify-center items-center"
+                onClick={() => setMenuOpened(true)}
+              >
                 menu
               </button>
             </div>
           </div>
         </div>
       </div>
-      {/* <MobileMenuModal /> */}
+      <PrimaryButton
+        className="fixed right-4 bottom-4 lg:hidden text-white bg-accent hover:bg-accent/90 active:bg-accent/90 rounded-sm z-50"
+        onClick={() => setSignupOpened(true)}
+      >
+        Sign up
+      </PrimaryButton>
+      <MobileMenuModal
+        open={isMenuOpened}
+        onClose={() => setMenuOpened(false)}
+      />
       <SignupModal
         open={isSignupOpened}
         onClose={() => setSignupOpened(false)}

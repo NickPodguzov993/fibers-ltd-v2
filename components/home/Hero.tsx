@@ -52,7 +52,7 @@ export function Hero({
             </LinkButton>
           </div>
         </div>
-        <div className="self-center lg:ml-auto w-[260px] h-[320px] lg:w-[400px] lg:h-[480px] bg-filler"></div>
+        <div className="self-center lg:ml-auto w-[200px] h-[280px] lg:w-[400px] lg:h-[480px] bg-filler"></div>
       </div>
       <div className="-mt-16 flex-shrink-0 lg:mt-auto p-3 lg:p-8 grid grid-cols-2 lg:flex gap-2 bg-violet rounded z-10">
         {metrics.map(({ title, value }, idx) => (
