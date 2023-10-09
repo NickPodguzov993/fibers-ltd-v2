@@ -40,39 +40,7 @@
         "Registration number: 201922390D"
       ],
       "copyright": "© Copyright 2023. Fibers PTE LTD"
-    },
-    "mobileNav": [
-      {
-        "title": "Button1",
-        "icon": "/icons/sports_esports_FILL0_wght400_GRAD0_opsz24.svg",
-        "activeIcon": "/icons/sports_esports_FILL1_wght400_GRAD0_opsz24.svg",
-        "link": "#"
-      },
-      {
-        "title": "Button2",
-        "icon": "/icons/sports_esports_FILL0_wght400_GRAD0_opsz24.svg",
-        "activeIcon": "/icons/sports_esports_FILL1_wght400_GRAD0_opsz24.svg",
-        "link": "#"
-      },
-      {
-        "title": "Button3",
-        "icon": "/icons/sports_esports_FILL0_wght400_GRAD0_opsz24.svg",
-        "activeIcon": "/icons/sports_esports_FILL1_wght400_GRAD0_opsz24.svg",
-        "link": "#"
-      },
-      {
-        "title": "Button4",
-        "icon": "/icons/sports_esports_FILL0_wght400_GRAD0_opsz24.svg",
-        "activeIcon": "/icons/sports_esports_FILL1_wght400_GRAD0_opsz24.svg",
-        "link": "#"
-      },
-      {
-        "title": "Button5",
-        "icon": "/icons/sports_esports_FILL0_wght400_GRAD0_opsz24.svg",
-        "activeIcon": "/icons/sports_esports_FILL1_wght400_GRAD0_opsz24.svg",
-        "link": "#"
-      }
-    ]
+    }
   },
   "home": {
     "hero": {

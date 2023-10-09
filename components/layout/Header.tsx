@@ -14,20 +14,13 @@ type HeaderProps = {
   links: { title: string; link: string }[];
   signup: string;
   login: string;
-  mobileNav: {
-    title: string;
-    icon: string;
-    activeIcon: string;
-    link: string;
-  }[];
 };
 
-export function Header({ logo, links, signup, login, mobileNav }: HeaderProps) {
+export function Header({ logo, links, signup, login }: HeaderProps) {
   const [isLoginOpened, setLoginOpened] = useState(false);
   const [isSignupOpened, setSignupOpened] = useState(false);
   const pathName = usePathname();
   const isEng = pathName.startsWith("/en");
-  console.log(pathName);
 
   return (
     <>
@@ -90,7 +83,7 @@ export function Header({ logo, links, signup, login, mobileNav }: HeaderProps) {
           </div>
         </div>
       </div>
-      {/* <MobileNav buttons={mobileNav} /> */}
+      {/* <MobileMenuModal /> */}
       <SignupModal
         open={isSignupOpened}
         onClose={() => setSignupOpened(false)}
