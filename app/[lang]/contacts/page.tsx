@@ -1,5 +1,6 @@
-import { PropsWithLanguage } from "@/lib/i18n";
 import clsx from "clsx";
+import { PropsWithLanguage } from "@/lib/i18n";
+import { titleFont } from "@/lib/fonts";
 
 const cards = [
   {
@@ -30,7 +31,12 @@ export default async function Contacts({
       <div className="flex flex-col gap-4 items-center">
         <div className="flex gap-2">
           <div>cat</div>
-          <h2 className="text-[32px] lg:text-[64px] font-intern font-bold text-dark">
+          <h2
+            className={clsx(
+              "text-[32px] lg:text-[64px] font-bold text-dark",
+              titleFont.className
+            )}
+          >
             Contacts
           </h2>
         </div>
@@ -72,7 +78,12 @@ function Card({ title, value, cta, className }: CardProps) {
       )}
     >
       <h3 className="text-dark/50 lg:text-lg lg:leading-paragraph">{title}</h3>
-      <span className="text-lg lg:text-[32px] leading-paragraph font-inter font-bold text-accent lg:pb-2 lg:leading-none">
+      <span
+        className={clsx(
+          "text-lg lg:text-[32px] leading-paragraph font-bold text-accent lg:pb-2 lg:leading-none",
+          titleFont.className
+        )}
+      >
         {value}
       </span>
       {cta && (

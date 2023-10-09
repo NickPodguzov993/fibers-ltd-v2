@@ -10,11 +10,12 @@ const config: Config = {
     container: {
       center: true,
       screens: {
-        xl: "1360px",
+        xl: "1280px",
+        "2xl": "1440px",
       },
       padding: {
         DEFAULT: "16px",
-        xl: "0",
+        xl: "40px",
       },
     },
     borderRadius: {
@@ -54,10 +55,6 @@ const config: Config = {
     outlineColor: {
       dark: "#212121",
     },
-    fontFamily: {
-      sans: `Rubik, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
-      intern: `Intern, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
-    },
     lineHeight: {
       none: "normal",
       paragraph: "1.6",
@@ -67,8 +64,9 @@ const config: Config = {
       title: "0.04em",
     },
     boxShadow: {
+      header: "0px 8px 24px 0px rgba(33, 33, 33, 0.05)",
+      card: "0px 8px 16px 0px rgba(33, 33, 33, 0.05)",
       modal: "0px 8px 8px 0px rgba(0, 0, 0, 0.10)",
-      card: "0px 8px 8px 0px rgba(33, 33, 33, 0.05)",
     },
     backdropBlur: {
       // TODO: remove

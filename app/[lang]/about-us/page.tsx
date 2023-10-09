@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { PropsWithLanguage } from "@/lib/i18n";
+import { titleFont } from "@/lib/fonts";
 
 const cards = [
   {
@@ -40,10 +41,20 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
   return (
     <div className="container pt-10 lg:pt-0 flex flex-col gap-6 lg:gap-40">
       <div className="flex flex-col gap-2 lg:gap-8">
-        <h2 className="text-[32px] lg:text-[64px] font-intern font-bold text-dark text-center">
+        <h2
+          className={clsx(
+            "text-[32px] lg:text-[64px] font-bold text-dark text-center",
+            titleFont.className
+          )}
+        >
           About us
         </h2>
-        <p className="font-intern font-bold leading-paragraph text-dark text-center lg:flex lg:flex-col lg:text-[48px] lg:leading-[1.4]">
+        <p
+          className={clsx(
+            "font-bold leading-paragraph text-dark text-center lg:flex lg:flex-col lg:text-[48px] lg:leading-[1.4]",
+            titleFont.className
+          )}
+        >
           <span className="text-dark/50">
             Unlock the potential of your business in the digital world through
             our strategic online advertising services,
@@ -79,7 +90,12 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
                 !(idx % 3) ? "lg:w-1/2" : "lg:w-full"
               )}
             >
-              <h3 className="text-[24px] lg:text-[32px] font-intern font-bold text-dark">
+              <h3
+                className={clsx(
+                  "text-[24px] lg:text-[32px] font-bold text-dark",
+                  titleFont.className
+                )}
+              >
                 {title}
               </h3>
               <p className="leading-paragraph text-dark lg:text-[18px]">

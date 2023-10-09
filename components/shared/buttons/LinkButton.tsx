@@ -11,7 +11,7 @@ export function LinkButton({ className, href, children }: LinkButtonProps) {
   return (
     <Link
       className={clsx(
-        "p-4 font-bold leading-none text-dark hover:text-accent transition-colors",
+        "p-4 font-bold leading-none text-dark hover:text-accent-link transition-colors",
         className
       )}
       href={href}

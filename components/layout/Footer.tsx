@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import Link from "next/link";
-import { LinkButton, PrimaryButton } from "../shared/buttons";
+import { titleFont } from "@/lib/fonts";
+import { LinkButton } from "../shared/buttons";
 
 type FooterProps = {
   email: string;
@@ -19,18 +21,21 @@ export function Footer({
   copyright,
 }: FooterProps) {
   return (
-    <div className="container flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 px-4 pt-6 pb-16 lg:p-12 bg-light-violet rounded-t lg:rounded-t-xl">
+    <div className="flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 px-4 pt-6 pb-16 lg:p-12 bg-light-violet rounded-t lg:rounded-t-xl">
       <div className="flex flex-col gap-8 lg:gap-2">
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-between lg:items-center">
           <a
-            className="text-center text-accent-link text-xl lg:text-[32px] leading-none font-intern font-bold"
+            className={clsx(
+              "text-center text-accent-link text-xl lg:text-[32px] leading-none font-bold",
+              titleFont.className
+            )}
             href={`mailto:${email}`}
           >
             {email}
           </a>
           <LinkButton
             href={`mailto:${email}`}
-            className="lg:px-8 py-6 lg:text-[20px] text-white hover:text-white bg-accent rounded-sm"
+            className="lg:px-8 lg:py-6 lg:text-[20px] text-white text-center hover:text-white bg-accent rounded-sm"
           >
             {contact}
           </LinkButton>

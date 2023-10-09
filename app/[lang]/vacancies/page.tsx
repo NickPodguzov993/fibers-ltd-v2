@@ -1,6 +1,8 @@
-import { PrimaryButton } from "@/components/shared/buttons";
-import { PropsWithLanguage } from "@/lib/i18n";
+import clsx from "clsx";
 import Link from "next/link";
+import { titleFont } from "@/lib/fonts";
+import { PropsWithLanguage } from "@/lib/i18n";
+import { PrimaryButton } from "@/components/shared/buttons";
 
 const vacancies = [
   {
@@ -34,7 +36,12 @@ export default async function Vacancies({
         <div className="flex flex-col gap-2">
           <div className="flex gap-2 lg:gap-4">
             <div>nigga</div>
-            <h2 className="text-[32px] lg:text-[64px] font-intern font-bold text-dark">
+            <h2
+              className={clsx(
+                "text-[32px] lg:text-[64px] font-bold text-dark",
+                titleFont.className
+              )}
+            >
               Join our team
             </h2>
           </div>
@@ -49,7 +56,12 @@ export default async function Vacancies({
               key={idx}
               href={"#"}
             >
-              <h3 className="text-[32px] font-intern font-bold text-dark">
+              <h3
+                className={clsx(
+                  "text-[32px] font-bold text-dark",
+                  titleFont.className
+                )}
+              >
                 {title}
               </h3>
               <div className="flex flex-col gap-4">

@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Locale, getDictionary } from "@/lib/i18n";
-import { Navigation } from "./Navigation";
+import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { MobileNav } from "./MobileNav";
 
@@ -12,7 +12,7 @@ export async function Layout({ lang, children }: LayoutProps) {
   const dict = await getDictionary(lang);
   return (
     <div className="pt-[120px] lg:pt-40 overflow-hidden">
-      <Navigation {...dict.layout.header} mobileNav={dict.layout.mobileNav} />
+      <Header {...dict.layout.header} mobileNav={dict.layout.mobileNav} />
       {children}
       <Footer {...dict.layout.footer} />
     </div>

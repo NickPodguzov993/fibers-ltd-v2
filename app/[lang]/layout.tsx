@@ -1,12 +1,10 @@
 import "./globals.css";
 import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
-// import { Inter } from 'next/font/google'
 
 import { PropsWithLanguage, i18n } from "@/lib/i18n";
+import { textFont } from "@/lib/fonts";
 import { Layout } from "@/components/layout";
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Fibers LTD",
@@ -25,9 +23,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang={lang}>
-      <body
-      // className={inter.className}
-      >
+      <body className={textFont.className}>
         <Layout lang={lang}>{children}</Layout>
       </body>
     </html>
