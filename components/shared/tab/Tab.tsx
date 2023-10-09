@@ -11,9 +11,9 @@ export function Tab({ className, active, children, onClick }: TabProps) {
   return (
     <button
       className={clsx(
-        "px-4 py-2 lg:py-4 font-bold lg:text-xl leading-none lg:leading-none text-dark border border-accent rounded-lg transition-colors",
+        "px-4 py-3 lg:py-4 lg:text-[20px] font-bold text-dark bg-white border-2 border-accent rounded-lg transition-colors",
         active
-          ? "bg-accent text-white hover:bg-accent active:bg-accent"
+          ? "!bg-accent !text-white hover:bg-accent/90 active:bg-accent/90"
           : "hover:bg-accent/10 active:bg-accent/10",
         className
       )}

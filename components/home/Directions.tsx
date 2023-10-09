@@ -1,12 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
-import { useMediaQuery } from "usehooks-ts";
-import { useKeenSlider } from "keen-slider/react";
+import clsx from "clsx";
+import { useState } from "react";
+
+import { titleFont } from "@/lib/fonts";
+import { Tab } from "../shared/tab";
 
 type DirectionsProps = {
   title: string;
   description: string;
-  directions: { title: string; image: string }[];
+  directions: { title: string; description: string }[];
 };
 
 export function Directions({
@@ -14,54 +16,46 @@ export function Directions({
   description,
   directions,
 }: DirectionsProps) {
-  const isMobile = useMediaQuery("(max-width: 1023px)");
-  const [domReady, setDomReady] = useState(false);
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    initial: ~~(directions.length / 2),
-    slides: {
-      perView: 1.7,
-      spacing: 16,
-      origin: "center",
-    },
-  });
-
-  useEffect(() => {
-    setDomReady(true);
-  }, []);
+  const [currentDir, setCurrentDir] = useState(0);
 
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex flex-col items-center ">
-        <h2 className="text-5xl lg:text-8xl font-bold -tracking-title text-dark">
-          {title}
-        </h2>
-        <p className="text-xl font-bold text-dark">{description}</p>
+    <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col gap-4 lg:flex-1">
+        <div className="flex gap-2 items-center">
+          <div>image</div>
+          <h2 className="text-[32px] font-bold text-dark">{title}</h2>
+        </div>
+        <p className="leading-paragraph text-dark">{description}</p>
       </div>
-      {isMobile && domReady ? (
-        <div ref={sliderRef} className="keen-slider !overflow-visible">
-          {directions.map(({ title, image }, idx) => (
-            <div
+      <div className="lg:flex-1 p-8 lg:p-16 -mx-4 lg:mx-0  bg-light-violet flex flex-col rounded gap-4 lg:gap-8">
+        <div className="flex flex-col gap-2 text-center">
+          <h3
+            className={clsx(
+              "text-[24px] font-bold text-dark",
+              titleFont.className
+            )}
+          >
+            App downloads
+          </h3>
+          <p className="text-[18px] leading-paragraph text-dark">
+            Getting your app into the hands of users is crucial, and we excel at
+            it. Our app download campaigns have a proven track record of
+            boosting downloads and user engagement. Let us take your app to the
+            top of the charts.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-2">
+          {directions.map(({ title }, idx) => (
+            <Tab
               key={idx}
-              className="keen-slider__slide flex flex-col gap-2 items-center"
+              active={idx === currentDir}
+              onClick={() => setCurrentDir(idx)}
             >
-              <div className="h-20 w-20 rounded-sm bg-filler" />
-              <h3 className="text-xl font-bold text-dark whitespace-nowrap">
-                {title}
-              </h3>
-            </div>
+              {title}
+            </Tab>
           ))}
         </div>
-      ) : (
-        <div className="flex gap-20 justify-center">
-          {directions.map(({ title, image }, idx) => (
-            <div key={idx} className="flex flex-col gap-2 items-center">
-              <div className="h-20 w-20 rounded-sm bg-filler" />
-              <h3 className="text-xl font-bold text-dark">{title}</h3>
-            </div>
-          ))}
-        </div>
-      )}
+      </div>
     </div>
   );
 }

@@ -44,6 +44,7 @@ const config: Config = {
       primary: "#F5F5F5",
       accent: "#FF376C",
       error: "#E53935",
+      violet: "#F3F1FF",
     },
     textColor: {
       white: "#FFF",

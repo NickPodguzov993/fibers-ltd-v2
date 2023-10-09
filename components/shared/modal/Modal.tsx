@@ -6,8 +6,8 @@ import ReactModal from "react-responsive-modal";
 type ModalProps = PropsWithChildren & {
   className?: string;
   title?: string;
-  open: boolean;
-  onClose: () => void;
+  open?: boolean;
+  onClose?: () => void;
 };
 
 export function Modal({

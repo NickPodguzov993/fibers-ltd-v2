@@ -1,57 +1,98 @@
 "use client";
+import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 
+import { titleFont } from "@/lib/fonts";
 import { AutoPlayPlugin } from "@/lib/slider";
 
 type ClientsProps = {
   title: string;
-  clients: { title: string; image: string }[];
+  clients: string[];
 };
 
 export function Clients({ title, clients }: ClientsProps) {
-  const [sliderRef] = useKeenSlider(
+  const [domReady, setDomReady] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [sliderReady, setSliderReady] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
       slides: {
-        perView: 1.3,
-        spacing: 16,
-        origin: "center",
+        perView: 2.4,
+        spacing: 8,
       },
       breakpoints: {
         "(min-width: 1024px)": {
           slides: {
-            perView: 5,
-            spacing: 16,
+            perView: 4.5,
+            spacing: 8,
           },
         },
+      },
+      created() {
+        setSliderReady(true);
+      },
+      slideChanged(s) {
+        setCurrentSlide(s.track.details.rel);
       },
     },
     [AutoPlayPlugin]
   );
-  const [domReady, setDomReady] = useState(false);
 
   useEffect(() => {
     setDomReady(true);
   }, []);
 
   return (
-    <div className="flex flex-col gap-10">
-      <h2 className="text-5xl lg:text-8xl font-bold -tracking-title text-dark">
-        {title}
-      </h2>
-      {domReady && (
-        <div
-          ref={sliderRef}
-          className="keen-slider !overflow-visible lg:!overflow-hidden"
+    <div className="p-4 lg:p-8 -mx-4 lg:mx-0 flex flex-col gap-6 lg:gap-10 bg-light-violet rounded overflow-hidden">
+      <div className="flex gap-2 lg:gap-4 items-center">
+        <div>img</div>
+        <h2
+          className={clsx(
+            "text-[32px] lg:text-[64px] font-bold text-dark",
+            titleFont.className
+          )}
         >
-          {clients.map(({ title, image }, idx) => (
-            <div
-              key={title}
-              className="keen-slider__slide aspect-[2/1] bg-filler/50 rounded-xs hover:bg-filler transition-colors "
-              title={title}
-            />
-          ))}
+          {title}
+        </h2>
+      </div>
+      {domReady && (
+        <div className="relative flex flex-col gap-4">
+          <div ref={sliderRef} className="keen-slider !overflow-visible">
+            {clients.map((image, idx) => (
+              <div
+                key={idx}
+                className="keen-slider__slide p-6 lg:px-12 lg:py-8 bg-white border-2 border-violet rounded"
+              >
+                image
+              </div>
+            ))}
+          </div>
+          <button
+            className="absolute left-4 top-4 px-2 py-4 bg-accent text-white rounded-sm"
+            onClick={() => instanceRef.current?.moveToIdx(currentSlide - 1)}
+          >
+            {"<"}
+          </button>
+          <button
+            className="absolute right-4 top-4 px-2 py-4 bg-accent text-white rounded-sm"
+            onClick={() => instanceRef.current?.moveToIdx(currentSlide + 1)}
+          >
+            {">"}
+          </button>
+          {sliderReady && (
+            <div className="flex justify-center">
+              {clients.map((_, idx) => {
+                return (
+                  <div
+                    key={idx}
+                    className="m-2 w-2 h-2 rounded-xs bg-accent-light transition-[width_0.3s]"
+                  />
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
     </div>

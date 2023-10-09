@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useMediaQuery } from "usehooks-ts";
 import { useKeenSlider } from "keen-slider/react";
 
 import { AdaptiveHeightPlugin } from "@/lib/slider";
@@ -9,7 +8,6 @@ import clsx from "clsx";
 
 type ReviewsProps = {
   title: string;
-  description: string;
   reviews: {
     comment: string;
     image: string;
@@ -19,17 +17,23 @@ type ReviewsProps = {
   }[];
 };
 
-export function Reviews({ title, description, reviews }: ReviewsProps) {
-  const isMobile = useMediaQuery("(max-width: 1023px)");
+export function Reviews({ title, reviews }: ReviewsProps) {
   const [domReady, setDomReady] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderReady, setSliderReady] = useState(false);
-  const [sliderRef] = useKeenSlider(
+  const [sliderRef, instanceRef] = useKeenSlider(
     {
       slides: {
-        perView: 1,
+        perView: 1.1,
         spacing: 16,
-        origin: "center",
+      },
+      breakpoints: {
+        "(min-width: 1024px)": {
+          slides: {
+            perView: 3.2,
+            spacing: 16,
+          },
+        },
       },
       created() {
         setSliderReady(true);
@@ -45,16 +49,18 @@ export function Reviews({ title, description, reviews }: ReviewsProps) {
     setDomReady(true);
   }, []);
 
+  const colors = ["bg-pink", "bg-green", "bg-violet", "bg-green"];
+
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex flex-col">
-        <h2 className="w-2/3 text-5xl lg:text-8xl font-bold -tracking-title leading-[normal] text-dark">
+    <div className="relative flex flex-col gap-6 lg:gap-10 p-6 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
+      <div className="flex gap-2 items-center">
+        <div className="text-[10px]">img</div>
+        <h2 className="text-[32px] lg:text-[64px] font-bold text-dark">
           {title}
         </h2>
-        <p className="font-bold text-dark">{description}</p>
       </div>
-      {isMobile && domReady ? (
-        <div className="flex flex-col gap-2">
+      {domReady && (
+        <div className="flex flex-col gap-4">
           <div
             ref={sliderRef}
             className="keen-slider transition-[height_0.3s] !overflow-visible"
@@ -63,13 +69,32 @@ export function Reviews({ title, description, reviews }: ReviewsProps) {
               <ReviewCard
                 key={idx}
                 className="keen-slider__slide !min-h-[auto] h-fit"
+                color={colors[idx % colors.length]}
                 {...review}
               />
             ))}
           </div>
+          <button
+            className={clsx(
+              "absolute left-4 top-1/2 px-2 py-4 bg-accent text-white rounded-sm transition-opacity",
+              !!currentSlide ? "opacity-100" : "opacity-0"
+            )}
+            onClick={() => instanceRef.current?.moveToIdx(currentSlide - 1)}
+          >
+            {"<"}
+          </button>
+          <button
+            className={clsx(
+              "absolute right-4 top-1/2 px-2 py-4 bg-accent text-white rounded-sm transition-opacity",
+              currentSlide + 3 < reviews.length ? "opacity-100" : "opacity-0"
+            )}
+            onClick={() => instanceRef.current?.moveToIdx(currentSlide + 1)}
+          >
+            {">"}
+          </button>
           {sliderReady && (
             <div className="flex justify-center">
-              {reviews.map((_, idx) => {
+              {reviews.slice(0, -2).map((_, idx) => {
                 return (
                   <div
                     key={idx}
@@ -82,12 +107,6 @@ export function Reviews({ title, description, reviews }: ReviewsProps) {
               })}
             </div>
           )}
-        </div>
-      ) : (
-        <div className="flex gap-4">
-          {reviews.map((review, idx) => (
-            <ReviewCard key={idx} className="flex-1" {...review} />
-          ))}
         </div>
       )}
     </div>
