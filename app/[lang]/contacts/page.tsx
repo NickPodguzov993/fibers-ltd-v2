@@ -15,7 +15,6 @@ const cards = [
     cta: "You can call us",
     link: "tel:+85256474293",
   },
-  { title: "Company number:", value: "1205540" },
 ];
 
 export default async function Contacts({
@@ -40,22 +39,20 @@ export default async function Contacts({
             Contacts
           </h2>
         </div>
-        <p className="leading-paragraph text-dark text-center">description</p>
+        <p className="leading-paragraph text-dark text-center">
+          We appreciate your interest in reaching out to us. Whether you have a
+          question, feedback, or want to explore potential collaborations, we
+          {"'"}re here to assist you. Our team is committed to providing
+          exceptional customer service and building long-lasting relationships
+          with our valued clients
+        </p>
       </div>
-      <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
-        {cards.map(({ link, ...rest }, idx) =>
-          link ? (
-            <a className={clsx(!idx && "lg:col-span-2")} key={idx} href={link}>
-              <Card className={getColor(idx)} {...rest} />
-            </a>
-          ) : (
-            <Card
-              className={clsx(!idx && "lg:col-span-2", getColor(idx))}
-              key={idx}
-              {...rest}
-            />
-          )
-        )}
+      <div className="grid gap-y-4 grid-cols-1">
+        {cards.map(({ link, ...rest }, idx) => (
+          <a key={idx} href={link}>
+            <Card className={getColor(idx)} {...rest} />
+          </a>
+        ))}
       </div>
     </div>
   );

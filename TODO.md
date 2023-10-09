@@ -3,14 +3,14 @@
 
 - Shared
   - [x] Buttons
-  - [ ] Input (text, password)
-  - [ ] Modal (common modal in desktop, full-width scrollable with fixed header in mobile)
+  - [x] Input (text, password)
+  - [x] Modal (common modal in desktop, full-width scrollable with fixed header in mobile)
 - Layout
-  - [x] Mobile nav component
+  - [ ] Mobile menu component
   - [ ] Cookies notification component
 
 ---
 
-- [ ] Forgot password
-- [ ] Update header, footer
+- [x] Update header, footer
+- [ ] Forgot password, Send cv
 - [ ] Replace logo image
