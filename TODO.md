@@ -12,5 +12,5 @@
 ---
 
 - [x] Update header, footer
-- [ ] Forgot password, Send cv
+- [ ] Forgot password, Learn more on hero, Send cv
 - [ ] Replace logo image

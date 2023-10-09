@@ -36,7 +36,7 @@ export function Header({ logo, links, signup, login }: HeaderProps) {
               priority={true}
             />
           </Link>
-          <div className="flex lg:gap-2">
+          <div className="flex lg:gap-6">
             <nav className="hidden lg:block">
               <ul className="flex items-center">
                 {links.map(({ title, link }) => (

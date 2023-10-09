@@ -3,7 +3,6 @@ import {
   Clients,
   Directions,
   Hero,
-  Metrics,
   Products,
   Reviews,
   Values,
@@ -15,7 +14,6 @@ export default async function Home({ params: { lang } }: PropsWithLanguage) {
   return (
     <div className="container pt-10 lg:pt-0 flex flex-col gap-20 lg:gap-40">
       <Hero {...dict.home.hero} />
-      <Metrics data={dict.home.metrics} />
       <Products {...dict.home.products} />
       <Values {...dict.home.values} />
       <Reviews {...dict.home.reviews} />

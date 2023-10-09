@@ -44,15 +44,19 @@
   },
   "home": {
     "hero": {
-      "title": "Fibers\nSecure & Easy\nto use",
-      "image": null
+      "title": "Fibers",
+      "subtitle": "Secure & Easy to use",
+      "description": "Boost your visibility and attract new customers with our innovative online advertising strategies – your success is our mission!",
+      "cta": "Buy traffic",
+      "about": "Learn more",
+      "image": "",
+      "metrics": [
+        { "title": "daily traffic", "value": "4,55 bln+" },
+        { "title": "geo", "value": "200+" },
+        { "title": "ad format", "value": "11" },
+        { "title": "clients per day", "value": "12 000+" }
+      ]
     },
-    "metrics": [
-      { "title": "daily traffic1", "value": "4,55 bln+" },
-      { "title": "daily traffic2", "value": "240+" },
-      { "title": "daily traffic3", "value": "13" },
-      { "title": "daily traffic4", "value": "16 000+" }
-    ],
     "products": {
       "title": "Our products",
       "description": "Ad formats",
