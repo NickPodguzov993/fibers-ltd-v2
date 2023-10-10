@@ -87,7 +87,10 @@ export function Clients({ title, clients }: ClientsProps) {
                 return (
                   <div
                     key={idx}
-                    className="m-2 w-2 h-2 rounded-xs bg-accent-light transition-[width_0.3s]"
+                    className={clsx(
+                      "m-2 w-2 h-2 rounded-xs bg-accent-light transition-[width_0.3s]",
+                      currentSlide === idx && "w-8"
+                    )}
                   />
                 );
               })}

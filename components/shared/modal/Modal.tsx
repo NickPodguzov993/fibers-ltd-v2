@@ -13,9 +13,9 @@ type ModalProps = PropsWithChildren & {
 export function Modal({
   className,
   title,
-  open,
+  open = false,
   children,
-  onClose,
+  onClose = () => {},
 }: ModalProps) {
   const [isScrolled, setScrolled] = useState(false);
 

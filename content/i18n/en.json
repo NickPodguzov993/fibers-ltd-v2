@@ -59,70 +59,55 @@
     },
     "products": {
       "title": "Our products",
-      "description": "Ad formats",
-      "categories": ["Category 1", "Category 2", "Category 3"],
+      "image": "",
       "products": [
         {
           "title": "Product 1",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 1",
+          "slug": "test",
           "image": ""
         },
         {
           "title": "Product 2",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 1",
+          "slug": "test",
           "image": ""
         },
         {
           "title": "Product 3",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 2",
+          "slug": "test",
           "image": ""
         },
         {
           "title": "Product 4",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 2",
+          "slug": "test",
           "image": ""
         },
         {
           "title": "Product 5",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 3",
+          "slug": "test",
           "image": ""
         },
         {
           "title": "Product 6",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 3",
+          "slug": "test",
           "image": ""
         },
         {
-          "title": "Product 6",
+          "title": "Product 7",
           "volume": "over 10M imperssions",
           "minBid": "starts at 0.5$ CPM",
-          "category": "Category 3",
-          "image": ""
-        },
-        {
-          "title": "Product 6",
-          "volume": "over 10M imperssions",
-          "minBid": "starts at 0.5$ CPM",
-          "category": "Category 3",
-          "image": ""
-        },
-        {
-          "title": "Product 6",
-          "volume": "over 10M imperssions",
-          "minBid": "starts at 0.5$ CPM",
-          "category": "Category 3",
+          "slug": "test",
           "image": ""
         }
       ]
@@ -181,27 +166,27 @@
         }
       ]
     },
-    "clients": {
-      "title": "Our client",
-      "clients": [
-        { "title": "client #1", "image": "" },
-        { "title": "client #2", "image": "" },
-        { "title": "client #3", "image": "" },
-        { "title": "client #4", "image": "" },
-        { "title": "client #5", "image": "" },
-        { "title": "client #6", "image": "" },
-        { "title": "client #7", "image": "" }
-      ]
-    },
     "directions": {
       "title": "Our directions",
       "description": "Ad formats",
       "directions": [
-        { "title": "Dating", "image": "" },
-        { "title": "App downloads", "image": "" },
-        { "title": "Desktop downloads", "image": "" },
-        { "title": "E-commerce", "image": "" },
-        { "title": "Games", "image": "" }
+        { "title": "Dating", "description": "test" },
+        { "title": "App downloads", "description": "test" },
+        { "title": "Desktop downloads", "description": "test" },
+        { "title": "E-commerce", "description": "test" },
+        { "title": "Games", "description": "test" }
+      ]
+    },
+    "clients": {
+      "title": "Our client",
+      "clients": [
+        "image #1",
+        "image #2",
+        "image #3",
+        "image #4",
+        "image #5",
+        "image #6",
+        "image #7"
       ]
     }
   },
