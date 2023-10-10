@@ -1,10 +1,11 @@
 import clsx from "clsx";
+import Image from "next/image";
 
 type ReviewCardProps = {
   className?: string;
-  comment: string;
   name: string;
   position: string;
+  comment: string;
   photo: string;
   color?: string;
 };
@@ -27,10 +28,12 @@ export function ReviewCard({
       <div className="flex gap-4">
         <div
           className={clsx(
-            "flex-shrink-0 w-14 lg:w-16 h-14 lg:h-16 rounded-sm",
+            "flex-shrink-0 flex items-end justify-center w-16 h-16 rounded-sm overflow-hidden",
             color || "bg-filler"
           )}
-        />
+        >
+          <Image src={photo} alt={name} width={64} height={64} />
+        </div>
         <div className="flex flex-col gap-2 justify-center text-dark leading-none">
           <span className="font-bold">{name}</span>
           <span>{position}</span>

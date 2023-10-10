@@ -11,13 +11,12 @@ import { LoginModal } from "./LoginModal";
 import { MobileMenuModal } from "./MobileMenuModal";
 
 type HeaderProps = {
-  logo: string;
   links: { title: string; link: string }[];
   signup: string;
   login: string;
 };
 
-export function Header({ logo, links, signup, login }: HeaderProps) {
+export function Header({ links, signup, login }: HeaderProps) {
   const [isLoginOpened, setLoginOpened] = useState(false);
   const [isSignupOpened, setSignupOpened] = useState(false);
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -31,7 +30,7 @@ export function Header({ logo, links, signup, login }: HeaderProps) {
           <Link href="/">
             <Image
               className="h-8 w-auto lg:h-12"
-              src={logo}
+              src="/images/logo.svg"
               alt="logo"
               width={236}
               height={48}

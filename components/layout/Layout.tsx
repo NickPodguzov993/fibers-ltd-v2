@@ -8,12 +8,12 @@ type LayoutProps = PropsWithChildren & {
 };
 
 export async function Layout({ lang, children }: LayoutProps) {
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang, "layout");
   return (
     <div className="pt-[120px] lg:pt-40 overflow-hidden">
-      <Header {...dict.layout.header} />
+      <Header {...dict.header} />
       {children}
-      <Footer {...dict.layout.footer} />
+      <Footer {...dict.footer} />
     </div>
   );
 }

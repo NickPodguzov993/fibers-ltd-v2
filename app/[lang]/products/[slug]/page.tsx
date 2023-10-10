@@ -4,9 +4,8 @@ import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
 export async function generateStaticParams({
   params: { lang },
 }: PropsWithLanguage) {
-  const dict = await getDictionary(lang);
-  //   return dict.policies.docs.map((doc) => ({ policy: doc.slug }));
-  return [{ slug: "test" }];
+  const dict = await getDictionary(lang, "products");
+  return dict.map(({ slug }) => ({ slug }));
 }
 
 type ProductProps = PropsWithLanguage & {
@@ -14,10 +13,10 @@ type ProductProps = PropsWithLanguage & {
 };
 
 export default async function Policy({ params: { lang, slug } }: ProductProps) {
-  //   const dict = await getDictionary(lang);
-  //   const policyDict = dict.policies.docs.find((doc) => doc.slug === policy)!;
+  const dict = await getDictionary(lang, "products");
+  const productDict = dict.find((product) => product.slug === slug);
 
-  if (slug !== "test") {
+  if (!productDict) {
     notFound();
   }
 

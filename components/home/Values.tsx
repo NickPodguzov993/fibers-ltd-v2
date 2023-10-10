@@ -1,5 +1,7 @@
-import { titleFont } from "@/lib/fonts";
 import clsx from "clsx";
+import Image from "next/image";
+
+import { titleFont } from "@/lib/fonts";
 
 type ValuesProps = {
   title: string;
@@ -12,10 +14,17 @@ export function Values({ title, values }: ValuesProps) {
     ["bg-light-pink", "bg-pink"],
     ["bg-light-green", "bg-green"],
   ];
+
   return (
     <div className="flex flex-col gap-6 lg:gap-10">
-      <div className="flex gap-2 lg:gap-4">
-        <div>image</div>
+      <div className="flex gap-2 lg:gap-4 items-center">
+        <Image
+          className="h-8 w-auto lg:h-14"
+          src="/images/emojis/spark.png"
+          alt=""
+          width={56}
+          height={56}
+        />
         <h2 className="text-[32px] lg:text-[64px] font-bold text-dark">
           {title}
         </h2>
@@ -32,12 +41,20 @@ export function Values({ title, values }: ValuesProps) {
           >
             <div
               className={clsx(
-                "rounded w-full min-h-[240px] lg:h-[380px]",
+                "rounded w-full lg:h-[380px]",
                 idx % 2 ? "order-1" : "order-2",
                 idx % 3 == 2 && "lg:flex-1 lg:h-full",
                 colors[idx % colors.length][1]
               )}
-            />
+            >
+              <Image
+                className="h-full w-auto"
+                src={image}
+                alt={title}
+                height={320}
+                width={640}
+              />
+            </div>
             <div
               className={clsx(
                 "px-2 py-4 flex flex-col gap-4 lg:p-8 lg:gap-16",

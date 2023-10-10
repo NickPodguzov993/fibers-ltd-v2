@@ -1,5 +1,6 @@
 "use client";
 import clsx from "clsx";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -19,8 +20,9 @@ export function Clients({ title, clients }: ClientsProps) {
     {
       loop: true,
       slides: {
-        perView: 2.4,
+        perView: 1.4,
         spacing: 8,
+        origin: "center",
       },
       breakpoints: {
         "(min-width: 1024px)": {
@@ -47,7 +49,13 @@ export function Clients({ title, clients }: ClientsProps) {
   return (
     <div className="p-4 lg:p-8 -mx-4 lg:mx-0 flex flex-col gap-6 lg:gap-10 bg-light-violet rounded overflow-hidden">
       <div className="flex gap-2 lg:gap-4 items-center">
-        <div>img</div>
+        <Image
+          className="h-8 w-auto lg:h-14"
+          src="/images/emojis/magic-wand.png"
+          alt=""
+          width={56}
+          height={56}
+        />
         <h2
           className={clsx(
             "text-[32px] lg:text-[64px] font-bold text-dark",
@@ -60,23 +68,31 @@ export function Clients({ title, clients }: ClientsProps) {
       {domReady && (
         <div className="relative flex flex-col gap-4">
           <div ref={sliderRef} className="keen-slider !overflow-visible">
-            {clients.map((image, idx) => (
+            {[...clients, ...clients].map((image, idx) => (
               <div
                 key={idx}
                 className="keen-slider__slide p-6 lg:px-12 lg:py-8 bg-white border-2 border-violet rounded"
               >
-                image
+                <div className="relative h-14 w-auto">
+                  <Image
+                    className="h-14 w-auto object-contain m-auto"
+                    src={image}
+                    alt={`partner ${idx}`}
+                    width={280}
+                    height={56}
+                  />
+                </div>
               </div>
             ))}
           </div>
           <button
-            className="absolute left-4 top-4 px-2 py-4 bg-accent text-white rounded-sm"
+            className="absolute -left-3 lg:-left-6 top-7 lg:top-8 px-2 py-4 bg-accent text-white rounded-sm"
             onClick={() => instanceRef.current?.moveToIdx(currentSlide - 1)}
           >
             {"<"}
           </button>
           <button
-            className="absolute right-4 top-4 px-2 py-4 bg-accent text-white rounded-sm"
+            className="absolute -right-3 lg:-right-6 top-7 lg:top-8 px-2 py-4 bg-accent text-white rounded-sm"
             onClick={() => instanceRef.current?.moveToIdx(currentSlide + 1)}
           >
             {">"}
@@ -89,7 +105,7 @@ export function Clients({ title, clients }: ClientsProps) {
                     key={idx}
                     className={clsx(
                       "m-2 w-2 h-2 rounded-xs bg-accent-light transition-[width_0.3s]",
-                      currentSlide === idx && "w-8"
+                      currentSlide % clients.length === idx && "w-8"
                     )}
                   />
                 );

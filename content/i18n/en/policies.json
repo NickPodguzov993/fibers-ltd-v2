@@ -1,0 +1,15 @@
+{
+  "title": "All policies",
+  "docs": [
+    {
+      "title": "Terms and Conditions",
+      "slug": "terms-and-conditions",
+      "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+    },
+    {
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "blocks": [{ "title": "Overview", "content": "Lorem ipsum" }]
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 "use client";
+import clsx from "clsx";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 
 import { AdaptiveHeightPlugin } from "@/lib/slider";
 import { ReviewCard } from "./ReviewCard";
-import clsx from "clsx";
 
 type ReviewsProps = {
   title: string;
   reviews: {
-    comment: string;
-    image: string;
     name: string;
     position: string;
+    comment: string;
     photo: string;
   }[];
 };
@@ -54,7 +54,13 @@ export function Reviews({ title, reviews }: ReviewsProps) {
   return (
     <div className="relative flex flex-col gap-6 lg:gap-10 p-6 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
       <div className="flex gap-2 items-center">
-        <div className="text-[10px]">img</div>
+        <Image
+          className="h-8 w-auto lg:h-14"
+          src="/images/emojis/megaphone.png"
+          alt=""
+          width={56}
+          height={56}
+        />
         <h2 className="text-[32px] lg:text-[64px] font-bold text-dark">
           {title}
         </h2>

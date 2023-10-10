@@ -4,8 +4,8 @@ import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
 export async function generateStaticParams({
   params: { lang },
 }: PropsWithLanguage) {
-  const dict = await getDictionary(lang);
-  return dict.policies.docs.map((doc) => ({ policy: doc.slug }));
+  const dict = await getDictionary(lang, "policies");
+  return dict.docs.map((doc) => ({ policy: doc.slug }));
 }
 
 type PolicyProps = PropsWithLanguage & {
@@ -15,8 +15,8 @@ type PolicyProps = PropsWithLanguage & {
 export default async function Policy({
   params: { lang, policy },
 }: PolicyProps) {
-  const dict = await getDictionary(lang);
-  const policyDict = dict.policies.docs.find((doc) => doc.slug === policy);
+  const dict = await getDictionary(lang, "policies");
+  const policyDict = dict.docs.find((doc) => doc.slug === policy);
   if (!policyDict) {
     notFound();
   }

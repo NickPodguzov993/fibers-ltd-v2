@@ -14,3 +14,5 @@
 - [x] Update header, footer
 - [ ] Forgot password, Learn more on hero, Send cv
 - [ ] Replace logo image
+- [ ] Home/Products content, click hints
+- [ ] Home/Directions change description on direction change

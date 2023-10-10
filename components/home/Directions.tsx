@@ -1,5 +1,6 @@
 "use client";
 import clsx from "clsx";
+import Image from "next/image";
 import { useState } from "react";
 
 import { titleFont } from "@/lib/fonts";
@@ -19,15 +20,25 @@ export function Directions({
   const [currentDir, setCurrentDir] = useState(0);
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row">
-      <div className="flex flex-col gap-4 lg:flex-1">
+    <div className="flex flex-col gap-4 lg:flex-row lg:gap-0">
+      <div className="flex flex-col gap-4 lg:flex-1 lg:pr-8 lg:justify-center">
         <div className="flex gap-2 items-center">
-          <div>image</div>
-          <h2 className="text-[32px] font-bold text-dark">{title}</h2>
+          <Image
+            className="h-8 w-auto lg:h-14"
+            src="/images/emojis/folder.png"
+            alt=""
+            width={56}
+            height={56}
+          />
+          <h2 className="text-[32px] lg:text-[64px] font-bold text-dark">
+            {title}
+          </h2>
         </div>
-        <p className="leading-paragraph text-dark">{description}</p>
+        <p className="lg:text-[18px] leading-paragraph text-dark">
+          {description}
+        </p>
       </div>
-      <div className="lg:flex-1 p-8 lg:p-16 -mx-4 lg:mx-0  bg-light-violet flex flex-col rounded gap-4 lg:gap-8">
+      <div className="lg:flex-1 p-8 lg:p-16 -mx-4 lg:mx-0 bg-light-violet flex flex-col rounded gap-4 lg:gap-8">
         <div className="flex flex-col gap-2 text-center">
           <h3
             className={clsx(

@@ -1,7 +1,8 @@
 "use client";
 import clsx from "clsx";
-import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -14,7 +15,6 @@ import { ProductsModal } from "./ProductsModal";
 
 type ProductsProps = {
   title: string;
-  image: string;
   products: {
     title: string;
     volume: string;
@@ -24,7 +24,7 @@ type ProductsProps = {
   }[];
 };
 
-export function Products({ title, image, products }: ProductsProps) {
+export function Products({ title, products }: ProductsProps) {
   const isMobile = useMediaQuery("(max-width: 1023px)");
   const pathName = usePathname();
   const [domReady, setDomReady] = useState(false);
@@ -46,7 +46,13 @@ export function Products({ title, image, products }: ProductsProps) {
   return (
     <div className="flex flex-col gap-4 lg:gap-8">
       <div className="flex items-center gap-2 lg:gap-4">
-        <div>image</div>
+        <Image
+          className="h-8 w-auto lg:h-14"
+          src="/images/emojis/save.png"
+          alt=""
+          width={56}
+          height={56}
+        />
         <h2
           className={clsx(
             "text-[32px] lg:text-[64px] font-bold text-dark",

@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import { titleFont } from "@/lib/fonts";
 import { LinkButton, PrimaryButton } from "../shared/buttons";
+import Image from "next/image";
 
 type HeroProps = {
   title: string;
   subtitle: string;
   description: string;
-  image: string;
   cta: string;
   about: string;
   metrics: { title: string; value: string }[];
@@ -16,7 +16,6 @@ export function Hero({
   title,
   subtitle,
   description,
-  image,
   cta,
   about,
   metrics,
@@ -52,9 +51,32 @@ export function Hero({
             </LinkButton>
           </div>
         </div>
-        <div className="self-center lg:ml-auto w-[200px] h-[280px] lg:w-[400px] lg:h-[480px] bg-filler"></div>
+        <div className="relative self-center lg:ml-auto z-0">
+          <Image
+            className="w-auto h-[320px] lg:h-[480px]"
+            src="/images/hamster.png"
+            alt=""
+            width={400}
+            height={480}
+            style={{ width: "auto" }}
+          />
+          <Image
+            className="absolute -right-20 lg:-right-32 top-10 lg:top-16 w-auto h-[250px] lg:h-[380px] -z-10"
+            src="/images/hamster-ring-r.png"
+            alt=""
+            width={380}
+            height={380}
+          />
+          <Image
+            className="absolute bottom-0 -left-20 lg:-left-32 w-auto h-[180px] lg:h-[280px] z-10"
+            src="/images/hamster-ring-l.png"
+            alt=""
+            width={280}
+            height={280}
+          />
+        </div>
       </div>
-      <div className="-mt-16 flex-shrink-0 lg:mt-auto p-3 lg:p-8 grid grid-cols-2 lg:flex gap-2 bg-violet rounded z-10">
+      <div className="-mt-24 flex-shrink-0 lg:mt-auto p-3 lg:p-8 grid grid-cols-2 lg:flex gap-2 bg-violet rounded z-10">
         {metrics.map(({ title, value }, idx) => (
           <div
             key={idx}

@@ -29,7 +29,7 @@ export function ProductCard({
           titleFont.className
         )}
       />
-      <div className="p-4 py-6 flex flex-col justify-center gap-4">
+      <div className="flex-1 p-4 py-6 flex flex-col justify-center gap-4">
         <h3 className="text-[24px] font-bold text-dark">{title}</h3>
         <div className="flex flex-col gap-2 leading-none text-dark">
           <span>Daily Volume: {volume}</span>
