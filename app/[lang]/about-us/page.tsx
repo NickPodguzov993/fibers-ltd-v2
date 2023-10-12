@@ -1,31 +1,33 @@
 import clsx from "clsx";
+import Image from "next/image";
+
 import { PropsWithLanguage } from "@/lib/i18n";
 import { titleFont } from "@/lib/fonts";
 
 const cards = [
   {
-    title: "Value #1",
+    title: "Our Mission",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "",
+      "At our company, our mission is to revolutionize lead generation by providing innovative solutions that drive business growth. We are committed to empowering businesses with high-quality leads and delivering exceptional results. Our team of experts leverages cutting-edge technology and data-driven strategies to connect businesses with their target audience effectively",
+    image: "/images/about-us/our-mission.png",
   },
   {
-    title: "Value #2",
+    title: "Our attitude towards clients",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "",
+      "We prioritize customer satisfaction and strive to build long-term partnerships with our clients. By understanding their unique requirements, we develop tailored lead generation strategies that align with their business objectives. Our transparent and collaborative approach ensures that they are actively involved in the process and can track their campaign progress",
+    image: "/images/about-us/our-attitude.png",
   },
   {
-    title: "Value #3",
+    title: "Our Approach",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "",
+      "At our company, we take a strategic and tailored approach to lead generation. We conduct thorough research, implement data-driven strategies, utilize multiple channels, personalize messaging, continuously optimize campaigns, and provide transparent reporting. Our goal is to generate high-quality leads and nurture them into valuable customers, ensuring sustainable business growth for our clients",
+    image: "/images/about-us/our-approach.png",
   },
   {
-    title: "Value #4",
+    title: "Our Team",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "",
+      "We foster a collaborative and innovative work environment that encourages creativity and continuous learning. Our team members are constantly exploring new trends and technologies, staying updated with the evolving landscape of lead generation. This ensures that we are always able to provide our clients with cutting-edge solutions tailored to their specific needs",
+    image: "/images/about-us/our-team.png",
   },
 ];
 
@@ -41,14 +43,23 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
   return (
     <div className="container pt-10 lg:pt-0 flex flex-col gap-6 lg:gap-40">
       <div className="flex flex-col gap-2 lg:gap-8">
-        <h2
-          className={clsx(
-            "text-[32px] lg:text-[64px] font-bold text-dark text-center",
-            titleFont.className
-          )}
-        >
-          About us
-        </h2>
+        <div className="flex gap-2 lg:gap-4 items-center justify-center">
+          <Image
+            className="h-8 w-auto lg:h-14"
+            src="/images/emojis/spark.png"
+            alt=""
+            width={56}
+            height={56}
+          />
+          <h2
+            className={clsx(
+              "text-[32px] lg:text-[64px] font-bold text-dark",
+              titleFont.className
+            )}
+          >
+            About us
+          </h2>
+        </div>
         <p
           className={clsx(
             "font-bold leading-paragraph text-dark text-center lg:flex lg:flex-col lg:text-[48px] lg:leading-[1.4]",
@@ -56,12 +67,12 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
           )}
         >
           <span className="text-dark/50">
-            Unlock the potential of your business in the digital world through
-            our strategic online advertising services,
+            We pride ourselves on our personalized approach and commitment to
+            delivering exceptional results.
           </span>
           <span>
-            designed to elevate your online presence and connect you with your
-            target audience
+            Trust us to drive your business forward. Let{"'"}s create success
+            together
           </span>
         </p>
       </div>
@@ -77,12 +88,21 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
           >
             <div
               className={clsx(
-                "h-[240px] lg:h-[380px] aspect-video rounded lg:rounded-lg",
+                "rounded lg:rounded-lg flex items-center justify-center",
                 !(idx % 2) ? "order-2" : "order-1",
                 !(idx % 3) ? "lg:w-1/2" : "lg:w-full",
                 colors[idx % colors.length][1]
               )}
-            />
+            >
+              <Image
+                className="h-[240px] w-full lg:h-[320px]"
+                src={image}
+                alt={title}
+                width={320}
+                height={320}
+                unoptimized
+              />
+            </div>
             <div
               className={clsx(
                 "px-2 py-4 lg:p-8 flex flex-col gap-4 lg:gap-16",

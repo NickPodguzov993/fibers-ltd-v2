@@ -1,4 +1,6 @@
 import clsx from "clsx";
+import Image from "next/image";
+
 import { PropsWithLanguage } from "@/lib/i18n";
 import { titleFont } from "@/lib/fonts";
 
@@ -11,9 +13,9 @@ const cards = [
   },
   {
     title: "Phone number:",
-    value: "+85256474293",
+    value: "+35799 930263",
     cta: "You can call us",
-    link: "tel:+85256474293",
+    link: "tel:+35799930263",
   },
 ];
 
@@ -28,8 +30,14 @@ export default async function Contacts({
   return (
     <div className="container max-w-[800px] pt-10 lg:pt-0 flex flex-col gap-8">
       <div className="flex flex-col gap-4 items-center">
-        <div className="flex gap-2">
-          <div>cat</div>
+        <div className="flex gap-2 items-center">
+          <Image
+            className="h-8 w-auto lg:h-14"
+            src="/images/emojis/cat.png"
+            alt=""
+            width={56}
+            height={56}
+          />
           <h2
             className={clsx(
               "text-[32px] lg:text-[64px] font-bold text-dark",

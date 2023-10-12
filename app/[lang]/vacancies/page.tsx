@@ -1,7 +1,9 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { titleFont } from "@/lib/fonts";
+import Image from "next/image";
+
 import { PropsWithLanguage } from "@/lib/i18n";
+import { titleFont } from "@/lib/fonts";
 import { PrimaryButton } from "@/components/shared/buttons";
 
 const vacancies = [
@@ -34,8 +36,14 @@ export default async function Vacancies({
     <div className="relative container pt-10 lg:pt-0 flex flex-col lg:flex-row gap-20 lg:gap-16">
       <div className="lg:w-[800px] flex-shrink-0 flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <div className="flex gap-2 lg:gap-4">
-            <div>nigga</div>
+          <div className="flex gap-2 lg:gap-4 items-center">
+            <Image
+              className="h-8 w-auto lg:h-14"
+              src="/images/emojis/woman.png"
+              alt=""
+              width={56}
+              height={56}
+            />
             <h2
               className={clsx(
                 "text-[32px] lg:text-[64px] font-bold text-dark",
