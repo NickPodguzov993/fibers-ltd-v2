@@ -1,1 +1,18 @@
-{}
+{
+  "title": "Contacts",
+  "description": "We appreciate your interest in reaching out to us. Whether you have a question, feedback, or want to explore potential collaborations, we're here to assist you. Our team is committed to providing exceptional customer service and building long-lasting relationships with our valued clients",
+  "cards": [
+    {
+      "title": "Email adress:",
+      "value": "info@fibersltd.com",
+      "cta": "You can write us",
+      "link": "mailto:info@fibersltd.com"
+    },
+    {
+      "title": "Phone number:",
+      "value": "+35799 930263",
+      "cta": "You can call us",
+      "link": "tel:+35799930263"
+    }
+  ]
+}
