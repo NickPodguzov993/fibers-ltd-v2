@@ -57,7 +57,7 @@ export function Header({ links, signup, login }: HeaderProps) {
             </nav>
             <div className="flex lg:gap-2">
               <PrimaryButton
-                className="hidden lg:block leading-[1] text-white bg-accent hover:bg-accent/90 active:bg-accent/90"
+                className="hidden lg:block leading-[1] text-white bg-accent hover:!bg-accent-hover active:!bg-accent-active"
                 onClick={() => setSignupOpened(true)}
               >
                 {signup}

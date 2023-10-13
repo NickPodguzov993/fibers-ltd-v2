@@ -40,11 +40,11 @@ export function Hero({
             </p>
           </div>
           <div className="flex gap-2 justify-center lg:justify-start">
-            <PrimaryButton className="lg:w-[240px] lg:px-8 lg:py-6 lg:text-[20px] bg-accent text-white hover:bg-accent/90 active:bg-accent/90">
+            <PrimaryButton className="lg:w-[240px] lg:px-8 lg:py-6 lg:text-[20px] bg-accent text-white hover:!bg-accent-hover active:!bg-accent-active">
               {cta}
             </PrimaryButton>
             <LinkButton
-              className="lg:w-[240px] lg:px-8 lg:py-6 lg:text-[20px] border-2 text-center !text-accent border-accent hover:bg-accent/10 active:bg-accent/10 rounded-sm"
+              className="lg:w-[240px] lg:px-8 lg:py-6 lg:text-[20px] border-2 text-center !text-accent border-accent hover:bg-accent/10 active:bg-accent/20 rounded-sm"
               href="#"
             >
               {about}

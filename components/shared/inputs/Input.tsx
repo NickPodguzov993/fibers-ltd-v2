@@ -30,7 +30,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         />
         {type === "password" && (
           <button
-            className="absolute inset-y-0.5 right-0.5 w-14 rounded-xs transition-colors hover:bg-accent/10 active:bg-accent/10"
+            className="absolute inset-y-0.5 right-0.5 w-14 rounded-xs transition-colors hover:bg-accent/10 active:bg-accent/20"
             onClick={onShow}
           >
             <svg

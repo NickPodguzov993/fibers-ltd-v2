@@ -31,6 +31,8 @@ const config: Config = {
       gray: "#F5F5F5",
       accent: "#FF376C",
       "accent-light": "#FF4073",
+      "accent-hover": "#FF4677",
+      "accent-active": "#FF225D",
       filler: "#D9D9D9",
       dark: "#212121",
       violet: "#F3F1FF",

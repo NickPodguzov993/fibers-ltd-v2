@@ -21,7 +21,7 @@ export function Footer({
   copyright,
 }: FooterProps) {
   return (
-    <div className="flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 px-4 pt-6 pb-16 lg:p-12 bg-light-violet rounded-t lg:rounded-t-xl">
+    <div className="flex flex-col gap-8 lg:gap-12 mt-20 lg:mt-40 px-4 pt-8 pb-16 lg:p-12 bg-light-violet rounded-t lg:rounded-t-xl">
       <div className="flex flex-col gap-8 lg:gap-2">
         <div className="flex flex-col lg:flex-row gap-8 lg:justify-between lg:items-center">
           <a
@@ -58,7 +58,7 @@ export function Footer({
               {links.map(({ title, link }) => (
                 <li key={title} className="flex">
                   <Link
-                    className="w-full py-2 rounded-xs font-medium text-dark hover:bg-accent/10 active:bg-accent/10 transition-colors"
+                    className="w-full py-2 rounded-xs font-medium text-dark hover:bg-accent/10 active:bg-accent/20 transition-colors"
                     href={link}
                   >
                     {title}

@@ -47,7 +47,7 @@ export function Modal({
           className
         ),
         closeButton:
-          "!top-2.5 lg:!top-2 !right-1.5 lg:!right-2 !p-4 rounded-sm transition-colors hover:bg-accent/10 active:bg-accent/10 outline-none",
+          "!top-2.5 lg:!top-2 !right-1.5 lg:!right-2 !p-4 rounded-sm transition-colors hover:bg-accent/10 active:bg-accent/20 outline-none",
       }}
       open={open}
       closeIcon={closeIcon}

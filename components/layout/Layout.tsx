@@ -13,7 +13,7 @@ export async function Layout({ lang, children }: LayoutProps) {
     <div className="pt-[120px] lg:pt-40 overflow-hidden">
       <Header {...dict.header} />
       {children}
-      <Footer {...dict.footer} />
+      <Footer email={dict.email} {...dict.footer} />
     </div>
   );
 }
