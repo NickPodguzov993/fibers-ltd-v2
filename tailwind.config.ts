@@ -50,6 +50,7 @@ const config: Config = {
     },
     textColor: {
       white: "#FFF",
+      black: "#000",
       accent: "#FF376C",
       "accent-link": "#FF3F72",
       dark: "#212121",
@@ -70,6 +71,7 @@ const config: Config = {
       header: "0px 8px 24px 0px rgba(33, 33, 33, 0.05)",
       card: "0px 8px 16px 0px rgba(33, 33, 33, 0.05)",
       modal: "0px 8px 8px 0px rgba(0, 0, 0, 0.10)",
+      cookies: "0px 10px 16px 0px rgba(0, 0, 0, 0.08);",
     },
     backdropBlur: {
       // TODO: remove

@@ -2,10 +2,10 @@
   "email": "info@fibersltd.com",
   "header": {
     "links": [
-      { "title": "关于我们", "link": "/zh/about-us" },
-      { "title": "职位空缺", "link": "/zh/vacancies" },
-      { "title": "联系方式", "link": "/zh/contacts" },
-      { "title": "政策", "link": "/zh/policies" }
+      { "title": "About us", "link": "/en/about-us" },
+      { "title": "Vacancies", "link": "/en/vacancies" },
+      { "title": "Contacts", "link": "/en/contacts" },
+      { "title": "Policies", "link": "/en/policies" }
     ],
     "signup": "Sign up",
     "login": "Log in"
@@ -17,9 +17,9 @@
       {
         "title": "About",
         "links": [
-          { "title": "About us", "link": "/zh/about-us" },
-          { "title": "Vacancies", "link": "/zh/vacancies" },
-          { "title": "Contacts", "link": "/zh/contacts" }
+          { "title": "About us", "link": "/en/about-us" },
+          { "title": "Vacancies", "link": "/en/vacancies" },
+          { "title": "Contacts", "link": "/en/contacts" }
         ]
       },
       {
@@ -27,9 +27,9 @@
         "links": [
           {
             "title": "Terms and Conditions",
-            "link": "/zh/policies/terms-and-conditions"
+            "link": "/en/policies/terms-and-conditions"
           },
-          { "title": "Privacy Policy", "link": "/zh/policies/privacy-policy" }
+          { "title": "Privacy Policy", "link": "/en/policies/privacy-policy" }
         ]
       }
     ],
@@ -38,5 +38,13 @@
       "Registration number: 201922390D"
     ],
     "copyright": "© Copyright 2023. Fibers PTE LTD"
+  },
+  "cookie": {
+    "cta": "Okay",
+    "description": "We care about your data, and we'd love to use cookies to make your experience better",
+    "policy": {
+      "title": "Privacy policy",
+      "slug": "privacy-policy"
+    }
   }
 }

@@ -45,7 +45,7 @@ export function Header({ links, signup, login }: HeaderProps) {
                     <LinkButton
                       className={clsx(
                         "font-normal leading-paragraph",
-                        pathName.startsWith(link) && "!text-accent"
+                        pathName.startsWith(link) && "!text-accent !font-bold"
                       )}
                       href={link}
                     >

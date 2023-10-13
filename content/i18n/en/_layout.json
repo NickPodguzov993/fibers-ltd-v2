@@ -38,5 +38,13 @@
       "Registration number: 201922390D"
     ],
     "copyright": "© Copyright 2023. Fibers PTE LTD"
+  },
+  "cookie": {
+    "cta": "Okay",
+    "description": "We care about your data, and we'd love to use cookies to make your experience better",
+    "policy": {
+      "title": "Privacy policy",
+      "slug": "privacy-policy"
+    }
   }
 }
