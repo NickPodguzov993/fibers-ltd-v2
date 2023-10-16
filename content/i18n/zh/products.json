@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "one-click",
+    "short": {
+      "title": "One-click",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.45$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "tab-links",
+    "short": {
+      "title": "Tab Links",
+      "volume": "over 30M traffic",
+      "minBid": "starts at 0.025$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "in-app",
+    "short": {
+      "title": "In-app",
+      "volume": "up to 5 million impressions",
+      "minBid": "CPM - 0.68$",
+      "image": ""
+    }
+  },
+  {
+    "slug": "interstitial",
+    "short": {
+      "title": "Interstitial",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.1$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "in-page",
+    "short": {
+      "title": "In-page",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.005$ CPC",
+      "image": ""
+    }
+  },
+  {
+    "slug": "notification-widget",
+    "short": {
+      "title": "Notification Widget",
+      "volume": "520 480 clicks",
+      "minBid": "CPC from $0.0012",
+      "image": ""
+    }
+  },
+  {
+    "slug": "banner",
+    "short": {
+      "title": "Banner",
+      "volume": "over 1B traffic",
+      "minBid": "starts at 0.002$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "native-ads",
+    "short": {
+      "title": "Native ads",
+      "volume": "over 180M traffic",
+      "minBid": "starts at 0.001$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "web-push",
+    "short": {
+      "title": "Web-push",
+      "volume": "over 1B clicks",
+      "minBid": "0.015$ CPM",
+      "image": ""
+    }
+  },
+  {
+    "slug": "content-fee",
+    "short": {
+      "title": "Content fee",
+      "volume": "over 50K traffic",
+      "minBid": "starts at 0.002$ CPC",
+      "image": ""
+    }
+  },
+  {
+    "slug": "in-stream-video",
+    "short": {
+      "title": "In-stream video",
+      "volume": "over 10M impressions",
+      "minBid": "starts at 0.6$",
+      "image": ""
+    }
+  }
+]

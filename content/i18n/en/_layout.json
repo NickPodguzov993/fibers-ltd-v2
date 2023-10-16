@@ -1,0 +1,50 @@
+{
+  "email": "info@fibersltd.com",
+  "header": {
+    "links": [
+      { "title": "About us", "link": "/en/about-us" },
+      { "title": "Vacancies", "link": "/en/vacancies" },
+      { "title": "Contacts", "link": "/en/contacts" },
+      { "title": "Policies", "link": "/en/policies" }
+    ],
+    "signup": "Sign up",
+    "login": "Log in"
+  },
+  "footer": {
+    "contact": "Contact us",
+    "phone": "+35799 930263",
+    "navigation": [
+      {
+        "title": "About",
+        "links": [
+          { "title": "About us", "link": "/en/about-us" },
+          { "title": "Vacancies", "link": "/en/vacancies" },
+          { "title": "Contacts", "link": "/en/contacts" }
+        ]
+      },
+      {
+        "title": "Policies",
+        "links": [
+          {
+            "title": "Terms and Conditions",
+            "link": "/en/policies/terms-and-conditions"
+          },
+          { "title": "Privacy Policy", "link": "/en/policies/privacy-policy" }
+        ]
+      }
+    ],
+    "licenses": [
+      "176 Joo Chiat Road #02-02, Singapore (427447)",
+      "Registration number: 201922390D"
+    ],
+    "copyright": "© Copyright 2023. Fibers PTE LTD"
+  },
+  "cookie": {
+    "cta": "Okay",
+    "description": "We care about your data, and we'd love to use cookies to make your experience better",
+    "policy": {
+      "title": "Privacy policy",
+      "slug": "privacy-policy"
+    }
+  }
+}

@@ -25,7 +25,11 @@ export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // Your files in `public`
-  if (["/favicon.ico"].includes(pathname) || pathname.startsWith("/images/")) {
+  if (
+    ["/favicon.ico"].includes(pathname) ||
+    pathname.startsWith("/images/") ||
+    pathname.startsWith("/icons/")
+  ) {
     return;
   }
 

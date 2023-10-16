@@ -1,0 +1,29 @@
+{
+  "list": {
+    "title": "Join our team",
+    "subtitle": "Build your career at Fibers",
+    "cardCta": "Send CV",
+    "missedTitle": "We something missed? Write us",
+    "missedCta": "Contact us"
+  },
+  "vacancies": [
+    {
+      "slug": "junior-developer",
+      "title": "Junior Developer",
+      "description": "Maintain and develop technical quality of the team by using the best engineering techniques and approaches. Follow well-built design and high-quality implementation practices",
+      "tags": ["Remote", "No experience"]
+    },
+    {
+      "slug": "web-analyst",
+      "title": "Web Analyst",
+      "description": "Good knowledge of AdWords, Doubleclick, Crazy Egg, Data Studio, Google Tag Manager, Google Optimize, SEMrush, Google Search Console. 2+ years of experience of implementing Enhanced Ecommerce in Google Analytics via GTM",
+      "tags": ["Remote", "2+ years"]
+    },
+    {
+      "slug": "project-manager",
+      "title": "Project Manager",
+      "description": "1.5+ years of experience as Project Manager on a technical product. Strong interest for digital products and technologies. Self-driven, responsible, outspoken, passionate",
+      "tags": ["Remote", "1.5+ years"]
+    }
+  ]
+}

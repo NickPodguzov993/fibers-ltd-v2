@@ -1,0 +1,82 @@
+{
+  "title": "Policies",
+  "navigation": "All polices",
+  "docs": [
+    {
+      "title": "Terms and Conditions",
+      "slug": "terms-and-conditions",
+      "blocks": [
+        {
+          "content": [
+            "These Terms and Conditions (“Agreement” or “Terms”) is an agreement between you and FIBERS PTD LTD and applies to your use of the website at https://fibersltd.com/ (referred to herein below as the “website”).\nPlease read carefully, agree and accept all the terms and conditions contained in this Agreement and the Privacy Policy and other Policies contained on the website, which are an integral part of this Agreement, before you become a member of Fibers PTE LTD.\nThese Terms apply in full force and effect to your use of this website and by using this website, you expressly accept all terms and conditions contained herein in full. You must not use this website, if you have any objection to any of these Terms.\nYou understand and agree that your access to and use of the website is entirely at your own discretion and risk, and that you will be solely responsible for any loss or damage that may arise from such access and use.\nPlease note that any actions on the website that are made by using your Internet connection or electronic device, unless you prove otherwise, shall be deemed as have been taken by you.\nThe following definitions will apply here:\n\"you\" or \"your\" means any natural person or entity using the website (\"Client\"), unless otherwise stated herein. \"Fibers\", \"we\", \"our\", \"Partners\" or \"our\" together will refer to Fibers PTE LTD and its subsidiaries, Partners, unless otherwise stated."
+          ]
+        },
+        {
+          "title": "About us",
+          "content": "This website is owned and maintained by Fibers PTE LTD, a company incorporated under the laws of Singapore, with the registered office at: 176 JOO CHIAT ROAD, #02-02, Singapore (427447), registration number 201922390D."
+        },
+        {
+          "title": "Conditions of use",
+          "content": [
+            "You are specifically restricted from using this website in any way that is or may be damaging to this website, using this website contrary to applicable laws and regulations, or in any way may cause harm to the website, or to any person or business entity.",
+            "You may use the Website only for lawful purposes and in accordance with these Terms. You agree not to use the Website:",
+            [
+              "In any way that violates any applicable federal, state, local or international law or regulation;",
+              "In any manner that involves transmitting or sending of, any advertising or promotional material, including any “junk mail”, “chain letter” or “spam” or any other similar solicitation;",
+              "In any manner that involves impersonating or attempt to impersonate the Company, a Company`s employee, another user or any other person or entity (including, without limitation, by using e-mail addresses associated with any of the foregoing);",
+              "In any manner that involves engaging in any other conduct that restricts or inhibits anyone’s use or enjoyment of the Website or our digital assets, or which, as determined by us, may harm the Company or users of the Website or expose them to liability;",
+              "In the manner that is or may be considered as defamatory, harassing, pornographic, embarrassing, vulgar, malicious, harmful, threatening, indecent, derogatory, discriminatory, untrue, political, abusive, sexist, hateful, offensive, menacing, obscene, racist, profane."
+            ],
+            "\nIn addition, you agree not to:",
+            [
+              "Use any robot, spider or another automatic device, process or means to access the Website for any purpose, including monitoring or copying any of the material on the Website;",
+              "Use any manual process to monitor or copy any of the material on the Website or for any other unauthorized purpose without our prior written consent;",
+              "Use the Website in any manner that could disable, overburden, damage, or impair the site or interfere with any other party’s use of the Website, including their ability to engage in real time activities through the Website;",
+              "Use any device, software or routine that interferes with the proper working of the Website;",
+              "Introduce any viruses, trojan horses, worms, logic bombs or other material which is malicious or technologically harmful;",
+              "Attempt to gain unauthorized access to, interfere with, damage or disrupt any parts of the Website, the server on which the Website is stored, or any server, computer or database connected to the Website;",
+              "Attack the Website via a denial-of-service attack or a distributed denial-of- service attack;",
+              "Otherwise attempt to interfere with the proper working of the Website."
+            ]
+          ]
+        },
+        {
+          "title": "Intellectual property",
+          "content": "Fibers PTE LTD owns all rights to the intellectual property and material contained in this website, and all such rights are reserved. You are granted a limited license only, subject to the restrictions provided in these Terms, for purposes of viewing the material contained on this website. You must not republish material from this website (including republication on another website), or reproduce or store material from this website in any public or private electronic retrieval system; you must not reproduce, duplicate, copy, sell, re-sell, visit, or otherwise exploit our website or material on our website for a commercial purpose, without our express written consent. Elements of the website are protected by trade dress, trade secret and other laws and may not be copied or imitated in whole or in part. All custom graphics, icons, and other items that appear on the website are trademarks, service marks or trade dress of Fibers PTE LTD and may not be used or interfered with in any manner without the express written consent of Fibers PTE LTD. In consideration of this, users agree that copies of the information will retain all copyright and other proprietary notices."
+        },
+        {
+          "title": "Legal terms",
+          "content": "This website may contain other proprietary notices and copyright information, the terms of which must be observed and followed. Information on this website may contain typographical errors or technical inaccuracies. Information may be changed or updated without notice."
+        },
+        {
+          "title": "Indemnification and limitation of liability",
+          "content": [
+            "You hereby indemnify to the fullest extent Fibers PTE LTD from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.",
+            "IN NO EVENT WILL FIBERS PTE LTD BE LIABLE TO ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER CONSEQUENTIAL DAMAGES FOR ANY USE OF THIS WEBSITE, OR ON ANY OTHER HYPER LINKED WEBSITE, INCLUDING, WITHOUT LIMITATION, ANY LOST PROFITS, BUSINESS INTERRUPTION, LOSS OF PROGRAMS OR OTHER DATA ON YOUR INFORMATION HANDLING SYSTEM OR OTHERWISE, EVEN IF WE ARE EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FIBERS PTE LTD IS NOT RESPONSIBLE FOR CONTENT OF THIRD-PARTIES WEBSITES."
+          ]
+        },
+        {
+          "title": "Modifications",
+          "content": "We can revise and update these Terms at any time without notice. In case of any changes, amendments, modifications, or corrections, we will post the revised version of the Terms on the website. It is your responsibility to check these Terms for any changes whenever you access the website. Your continued usage of the website after any changes to these Terms of Use will mean you accept those changes"
+        },
+        {
+          "title": "Contact us",
+          "content": "Any questions, comments and requests regarding these Terms should be addressed by writing to us at: 176 JOO CHIAT ROAD, #02-02, Singapore (427447) or by sending an e-mail to: info@fibersltd.com"
+        }
+      ]
+    },
+    {
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "blocks": [
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" },
+        { "title": "Overview", "content": "Lorem ipsum" }
+      ]
+    }
+  ]
+}

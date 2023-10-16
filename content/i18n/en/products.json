@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "one-click",
+    "short": {
+      "title": "One-click",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.45$ CPM",
+      "image": "/images/products/one-click.png"
+    }
+  },
+  {
+    "slug": "tab-links",
+    "short": {
+      "title": "Tab Links",
+      "volume": "over 30M traffic",
+      "minBid": "starts at 0.025$ CPM",
+      "image": "/images/products/tab-links.png"
+    }
+  },
+  {
+    "slug": "in-app",
+    "short": {
+      "title": "In-app",
+      "volume": "up to 5 million impressions",
+      "minBid": "CPM - 0.68$",
+      "image": "/images/products/in-app.png"
+    }
+  },
+  {
+    "slug": "interstitial",
+    "short": {
+      "title": "Interstitial",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.1$ CPM",
+      "image": "/images/products/interstitial.png"
+    }
+  },
+  {
+    "slug": "in-page",
+    "short": {
+      "title": "In-page",
+      "volume": "over 8M impressions",
+      "minBid": "starts at 0.005$ CPC",
+      "image": "/images/products/in-page.png"
+    }
+  },
+  {
+    "slug": "notification-widget",
+    "short": {
+      "title": "Notification Widget",
+      "volume": "520 480 clicks",
+      "minBid": "CPC from $0.0012",
+      "image": "/images/products/notification-widget.png"
+    }
+  },
+  {
+    "slug": "banner",
+    "short": {
+      "title": "Banner",
+      "volume": "over 1B traffic",
+      "minBid": "starts at 0.002$ CPM",
+      "image": "/images/products/banner.png"
+    }
+  },
+  {
+    "slug": "native-ads",
+    "short": {
+      "title": "Native ads",
+      "volume": "over 180M traffic",
+      "minBid": "starts at 0.001$ CPM",
+      "image": "/images/products/native-ads.png"
+    }
+  },
+  {
+    "slug": "web-push",
+    "short": {
+      "title": "Web-push",
+      "volume": "over 1B clicks",
+      "minBid": "0.015$ CPM",
+      "image": "/images/products/web-push.png"
+    }
+  },
+  {
+    "slug": "content-fee",
+    "short": {
+      "title": "Content fee",
+      "volume": "over 50K traffic",
+      "minBid": "starts at 0.002$ CPC",
+      "image": "/images/products/content-fee.png"
+    }
+  },
+  {
+    "slug": "in-stream-video",
+    "short": {
+      "title": "In-stream video",
+      "volume": "over 10M impressions",
+      "minBid": "starts at 0.6$",
+      "image": "/images/products/in-stream-video.png"
+    }
+  }
+]

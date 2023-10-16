@@ -1,63 +1,111 @@
 "use client";
+import clsx from "clsx";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import {
-  PrimaryButton,
-  LinkButton,
-  TransparentButton,
-} from "../shared/buttons";
+import { PrimaryButton, LinkButton } from "../shared/buttons";
+import { SignupModal } from "./SignupModal";
+import { LoginModal } from "./LoginModal";
+import { MobileMenuModal } from "./MobileMenuModal";
 
 type HeaderProps = {
-  logo: string;
   links: { title: string; link: string }[];
   signup: string;
   login: string;
 };
 
-export function Header({ logo, links, signup, login }: HeaderProps) {
+export function Header({ links, signup, login }: HeaderProps) {
+  const [isLoginOpened, setLoginOpened] = useState(false);
+  const [isSignupOpened, setSignupOpened] = useState(false);
+  const [isMenuOpened, setMenuOpened] = useState(false);
   const pathName = usePathname();
   const isEng = pathName.startsWith("/en");
 
   return (
-    <div className="fixed inset-x-0 top-0 lg:top-4 flex p-0 lg:px-4">
-      <div className="container mx-auto w-full px-4 py-2 lg:p-4 flex justify-between items-center rounded-b lg:rounded bg-white/50 lg:bg-white/70 backdrop-blur lg:border lg:border-dashed lg:border-primary">
-        <Link href="/">
-          <Image
-            className="h-10 w-auto object-contain object-left lg:h-12"
-            src={logo}
-            alt="logo"
-            width={236}
-            height={48}
-            unoptimized
-          />
-        </Link>
-        <div className="flex">
-          <nav className="hidden lg:block">
-            <ul className="h-full flex items-center">
-              {links.map(({ title, link }) => (
-                <li key={title}>
-                  <LinkButton href={link}>{title}</LinkButton>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <TransparentButton className="hidden lg:block">
-            {signup}
-          </TransparentButton>
-          <PrimaryButton className="hidden lg:block">{login}</PrimaryButton>
-          {/* <TransparentButton onClick={() => {}}>Eng</TransparentButton> */}
-          <LinkButton
-            href={pathName.replace(
-              isEng ? "/en" : "/zh",
-              isEng ? "/zh" : "/en"
-            )}
-          >
-            {isEng ? "Eng" : "中文"}
-          </LinkButton>
+    <>
+      <div className="fixed inset-x-2 top-2 lg:top-4 lg:inset-x-4 flex p-0 lg:px-4 z-50">
+        <div className="container mx-auto w-full px-4 py-1 lg:p-4 flex justify-between items-center rounded lg:rounded-md shadow-header bg-white">
+          <Link href="/">
+            <Image
+              className="h-8 w-auto lg:h-12"
+              src="/images/logo.svg"
+              alt="logo"
+              width={236}
+              height={48}
+              priority={true}
+            />
+          </Link>
+          <div className="flex lg:gap-6">
+            <nav className="hidden lg:block">
+              <ul className="flex items-center">
+                {links.map(({ title, link }) => (
+                  <li key={title} className="flex">
+                    <LinkButton
+                      className={clsx(
+                        "font-normal leading-paragraph",
+                        pathName.startsWith(link) && "!text-accent !font-bold"
+                      )}
+                      href={link}
+                    >
+                      {title}
+                    </LinkButton>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="flex lg:gap-2">
+              <PrimaryButton
+                className="hidden lg:block leading-[1] text-white bg-accent hover:!bg-accent-hover active:!bg-accent-active"
+                onClick={() => setSignupOpened(true)}
+              >
+                {signup}
+              </PrimaryButton>
+              <PrimaryButton
+                className="hidden lg:block leading-[1]"
+                onClick={() => setLoginOpened(true)}
+              >
+                {login}
+              </PrimaryButton>
+              <LinkButton
+                className="leading-paragraph"
+                href={pathName.replace(
+                  isEng ? "/en" : "/zh",
+                  isEng ? "/zh" : "/en"
+                )}
+              >
+                {isEng ? "Eng" : "中文"}
+              </LinkButton>
+              <button
+                className="px-2 py-4 flex lg:hidden justify-center items-center"
+                onClick={() => setMenuOpened(true)}
+              >
+                menu
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <PrimaryButton
+        className="fixed right-4 bottom-4 lg:hidden text-white bg-accent hover:bg-accent/90 active:bg-accent/90 rounded-sm z-50"
+        onClick={() => setSignupOpened(true)}
+      >
+        Sign up
+      </PrimaryButton>
+      <MobileMenuModal
+        open={isMenuOpened}
+        onClose={() => setMenuOpened(false)}
+      />
+      <SignupModal
+        open={isSignupOpened}
+        onClose={() => setSignupOpened(false)}
+      />
+      <LoginModal
+        open={isLoginOpened}
+        onSignup={() => setSignupOpened(true)}
+        onClose={() => setLoginOpened(false)}
+      />
+    </>
   );
 }

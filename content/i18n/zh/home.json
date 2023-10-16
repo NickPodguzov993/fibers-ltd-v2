@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Fibers",
+    "subtitle": "Secure & Easy to use",
+    "description": "Boost your visibility and attract new customers with our innovative online advertising strategies – your success is our mission!",
+    "cta": "Buy traffic",
+    "about": "Learn more",
+    "metrics": [
+      { "title": "daily traffic", "value": "4,55 bln+" },
+      { "title": "geo", "value": "200+" },
+      { "title": "ad format", "value": "11" },
+      { "title": "clients per day", "value": "12 000+" }
+    ]
+  },
+  "products": {
+    "title": "Our products"
+  },
+  "values": {
+    "title": "Our values",
+    "values": [
+      {
+        "title": "Innovation and Creativity",
+        "description": "We believe that innovation and a creative approach are what keep us ahead in the ever-changing world of internet advertising. Our team constantly explores new technologies and strategies to provide you with unique solutions that drive your business's growth. We take pride in our ability to turn creative ideas into successful advertising campaigns, making your brand more expressive and appealing to your target audience.",
+        "image": "/images/values-innovation.png"
+      },
+      {
+        "title": "Professionalism and Efficiency",
+        "description": "Our team consists of highly skilled professionals ready to ensure the maximum efficiency of your advertising projects. We base our work on in-depth market knowledge and best practices to create solutions that achieve your goals. Our professionalism is reflected in the quality of service and results we achieve for you.",
+        "image": "/images/values-proffesionalism.png"
+      },
+      {
+        "title": "Client-Centric Approach",
+        "description": "You, as the client, are our top priority. We listen to your needs and aim to understand your unique situation. Our goal is to create advertising campaigns that align most accurately with your objectives and budget. We maintain open communication and are willing to adapt our solutions to meet your expectations and help you achieve success online.",
+        "image": "/images/values-clients.png"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Experts about us",
+    "reviews": [
+      {
+        "name": "Villiam Jons",
+        "position": "Marketing Director",
+        "comment": "Collaborating with Fibers has brought us significant growth in our online presence. Their professional approach and results speak for themselves.",
+        "photo": "/images/review-villiam.png"
+      },
+      {
+        "name": "John Smith",
+        "position": "Chief Analyst",
+        "comment": "I'm impressed by how Fibers adapts to market changes and develops strategies that work. They are true experts in the world of internet advertising",
+        "photo": "/images/review-jhon.png"
+      },
+      {
+        "name": "Kevin Johnson",
+        "position": "Creative Director",
+        "comment": "Working with Fibers is an inspiration to our team. Their innovative design and creative solutions have made our advertising campaigns truly unique",
+        "photo": "/images/review-kevin.png"
+      },
+      {
+        "name": "Mark Davis",
+        "position": "Finance Director",
+        "comment": "Fibers demonstrates outstanding efficiency in managing our advertising budget. With them, we see a clear return on investment, which is rare in the market.",
+        "photo": "/images/review-mark.png"
+      }
+    ]
+  },
+  "directions": {
+    "title": "Our directions",
+    "description": "Our directions encompass a wide range of opportunities in the world of internet advertising. We specialize in dating, app downloads, e-commerce, gaming, and many other areas. Our goal is to help your business achieve outstanding results online, regardless of the industry.",
+    "directions": [
+      {
+        "title": "Dating",
+        "description": "Our expertise in the dating vertical is unmatched. We specialize in creating tailored advertising campaigns that connect people looking for meaningful relationships. Let us help you find your target audience and bring love into their lives"
+      },
+      {
+        "title": "App downloads",
+        "description": "Getting your app into the hands of users is crucial, and we excel at it. Our app download campaigns have a proven track record of boosting downloads and user engagement. Let us take your app to the top of the charts."
+      },
+      {
+        "title": "Desktop downloads",
+        "description": "Desktop software still has a strong presence, and we know how to make it shine. Our strategies for desktop downloads are designed to increase installations and usage. Join us in the world of desktop software success."
+      },
+      {
+        "title": "E-commerce",
+        "description": "E-commerce is all about conversions, and we're experts in driving them. Whether you're selling products or services online, we have the tools and strategies to maximize your sales and revenue. Let's boost your e-commerce business together"
+      },
+      {
+        "title": "Games",
+        "description": "Gaming is a dynamic industry, and we're in tune with it. Our game-focused campaigns are designed to attract players, boost engagement, and increase revenue for game developers. Level up your game advertising with us"
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our clients",
+    "clients": [
+      "/images/partner-1.png",
+      "/images/partner-2.png",
+      "/images/partner-3.png",
+      "/images/partner-4.png",
+      "/images/partner-5.png"
+    ]
+  }
+}
