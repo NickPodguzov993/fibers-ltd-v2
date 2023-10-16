@@ -35,7 +35,7 @@ export function Footer({
           </a>
           <LinkButton
             href={`mailto:${email}`}
-            className="lg:px-8 lg:py-6 lg:text-[20px] text-white text-center hover:text-white bg-accent rounded-sm"
+            className="lg:px-8 lg:py-6 lg:text-[20px] text-white text-center hover:text-white bg-accent rounded-sm hover:bg-accent-hover active:bg-accent-active transition-colors"
           >
             {contact}
           </LinkButton>

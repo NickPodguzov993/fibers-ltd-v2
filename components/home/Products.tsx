@@ -95,7 +95,7 @@ export function Products({ title, products }: ProductsProps) {
         className="lg:px-8 lg:py-6 lg:w-fit lg:self-center lg:text-[20px]"
         onClick={() => setShowAll((v) => !v)}
       >
-        Show all
+        {!showAll ? "Show all" : "Hide"}
       </PrimaryButton>
     </div>
   );

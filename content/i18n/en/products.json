@@ -5,7 +5,7 @@
       "title": "One-click",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.45$ CPM",
-      "image": ""
+      "image": "/images/products/one-click.png"
     }
   },
   {
@@ -14,7 +14,7 @@
       "title": "Tab Links",
       "volume": "over 30M traffic",
       "minBid": "starts at 0.025$ CPM",
-      "image": ""
+      "image": "/images/products/tab-links.png"
     }
   },
   {
@@ -23,7 +23,7 @@
       "title": "In-app",
       "volume": "up to 5 million impressions",
       "minBid": "CPM - 0.68$",
-      "image": ""
+      "image": "/images/products/in-app.png"
     }
   },
   {
@@ -32,7 +32,7 @@
       "title": "Interstitial",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.1$ CPM",
-      "image": ""
+      "image": "/images/products/interstitial.png"
     }
   },
   {
@@ -41,7 +41,7 @@
       "title": "In-page",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.005$ CPC",
-      "image": ""
+      "image": "/images/products/in-page.png"
     }
   },
   {
@@ -50,7 +50,7 @@
       "title": "Notification Widget",
       "volume": "520 480 clicks",
       "minBid": "CPC from $0.0012",
-      "image": ""
+      "image": "/images/products/notification-widget.png"
     }
   },
   {
@@ -59,7 +59,7 @@
       "title": "Banner",
       "volume": "over 1B traffic",
       "minBid": "starts at 0.002$ CPM",
-      "image": ""
+      "image": "/images/products/banner.png"
     }
   },
   {
@@ -68,7 +68,7 @@
       "title": "Native ads",
       "volume": "over 180M traffic",
       "minBid": "starts at 0.001$ CPM",
-      "image": ""
+      "image": "/images/products/native-ads.png"
     }
   },
   {
@@ -77,7 +77,7 @@
       "title": "Web-push",
       "volume": "over 1B clicks",
       "minBid": "0.015$ CPM",
-      "image": ""
+      "image": "/images/products/web-push.png"
     }
   },
   {
@@ -86,7 +86,7 @@
       "title": "Content fee",
       "volume": "over 50K traffic",
       "minBid": "starts at 0.002$ CPC",
-      "image": ""
+      "image": "/images/products/content-fee.png"
     }
   },
   {
@@ -95,7 +95,7 @@
       "title": "In-stream video",
       "volume": "over 10M impressions",
       "minBid": "starts at 0.6$",
-      "image": ""
+      "image": "/images/products/in-stream-video.png"
     }
   }
 ]

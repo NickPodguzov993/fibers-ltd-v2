@@ -32,7 +32,7 @@ export function ReviewCard({
             color || "bg-filler"
           )}
         >
-          <Image src={photo} alt={name} width={64} height={64} />
+          <Image src={photo} alt={name} width={64} height={64} unoptimized />
         </div>
         <div className="flex flex-col gap-2 justify-center text-dark leading-none">
           <span className="font-bold">{name}</span>

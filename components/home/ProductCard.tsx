@@ -1,5 +1,6 @@
-import { titleFont } from "@/lib/fonts";
 import clsx from "clsx";
+import Image from "next/image";
+import { titleFont } from "@/lib/fonts";
 
 type ProductCardProps = {
   className?: string;
@@ -25,10 +26,12 @@ export function ProductCard({
     >
       <div
         className={clsx(
-          "flex-1 bg-white border-violet aspect-video rounded-md",
+          "flex items-center justify-center bg-white border-violet rounded-md h-[200px]",
           titleFont.className
         )}
-      />
+      >
+        <Image src={image} alt={title} width={290} height={180} unoptimized />
+      </div>
       <div className="flex-1 p-4 py-6 flex flex-col justify-center gap-4">
         <h3 className="text-[24px] font-bold text-dark">{title}</h3>
         <div className="flex flex-col gap-2 leading-none text-dark">

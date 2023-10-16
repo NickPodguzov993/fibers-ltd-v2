@@ -1,10 +1,11 @@
 "use client";
-import { getCookie, setCookie } from "cookies-next";
-import { PrimaryButton } from "../shared/buttons";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getCookie, setCookie } from "cookies-next";
+
+import { PrimaryButton } from "../shared/buttons";
 
 const COOKIE_TOKEN = "cookie-accepted";
 

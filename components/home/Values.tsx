@@ -53,6 +53,7 @@ export function Values({ title, values }: ValuesProps) {
                 alt={title}
                 height={320}
                 width={640}
+                unoptimized
               />
             </div>
             <div
