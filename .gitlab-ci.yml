@@ -1,8 +1,10 @@
 stages:
     - build
 
-before_script:
-    - echo -n $REGISTRY_PASSWORD | docker login -u $REGISTRY_USER --password-stdin $REGISTRY
+default:
+    before_script:
+        - docker info
+        - echo -n $REGISTRY_PASSWORD | docker login -u $REGISTRY_USER --password-stdin $REGISTRY
 
 build:
     stage: build
