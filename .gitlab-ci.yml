@@ -1,0 +1,15 @@
+stages:
+    - build
+
+before_script:
+    - echo -n $REGISTRY_PASSWORD | docker login -u $REGISTRY_USER --password-stdin $REGISTRY
+
+build:
+    stage: build
+    script:
+        - >
+            docker build 
+            -tag $REGISTRY/fibers-ltd-v2:latest
+            .
+        - docker push $REGISTRY/fibers-ltd-v2:latest
+        
