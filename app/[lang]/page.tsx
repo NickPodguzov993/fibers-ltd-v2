@@ -3,6 +3,7 @@ import {
   Clients,
   Directions,
   Hero,
+  MainPartner,
   Products,
   Reviews,
   Values,
@@ -20,7 +21,8 @@ export default async function Home({ params: { lang } }: PropsWithLanguage) {
         products={products.map(({ slug, short }) => ({ slug, ...short }))}
       />
       <Values {...dict.values} />
-      <Reviews {...dict.reviews} />
+      <MainPartner />
+      <Reviews {...dict.reviews} />\
       <Directions {...dict.directions} />
       <Clients {...dict.clients} />
     </div>

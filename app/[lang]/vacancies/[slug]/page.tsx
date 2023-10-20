@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
 import { titleFont } from "@/lib/fonts";
 import { PrimaryButton } from "@/components/shared/buttons";
-import Image from "next/image";
 
 export async function generateStaticParams({
   params: { lang },
@@ -28,7 +28,7 @@ export default async function Vacancy({
   }
 
   return (
-    <div className="container pt-10 lg:pt-0 flex flex-col lg:flex-row gap-20 lg:gap-16">
+    <div className="relative container pt-10 lg:pt-0 flex flex-col lg:flex-row gap-20 lg:gap-16">
       <div className="flex flex-col gap-8 lg:gap-12 max-w-[800px]">
         <h2
           className={clsx(

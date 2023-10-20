@@ -93,11 +93,10 @@
   "clients": {
     "title": "Our clients",
     "clients": [
-      "/images/partner-1.png",
-      "/images/partner-2.png",
-      "/images/partner-3.png",
-      "/images/partner-4.png",
-      "/images/partner-5.png"
+      "/images/partner-alaro.png",
+      "/images/partner-pulsup.png",
+      "/images/partner-vilardo.png",
+      "/images/partner-techmore.png"
     ]
   }
 }

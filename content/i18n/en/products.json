@@ -5,7 +5,24 @@
       "title": "One-click",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.45$ CPM",
-      "image": "/images/products/one-click.png"
+      "image": "/images/products/on-click.png"
+    },
+    "detail": {
+      "title": "On-click (popunder)",
+      "cta": "Buy Onclick traffic / CPM & CPA goal",
+      "lead": "Get leads with most popular ad format",
+      "card": {
+        "title": "What are popunder ads or onclick ads?",
+        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
+        "cta": "Get started",
+        "image": "/images/products/on-click.png"
+      },
+      "stats": [
+        { "title": "traffic", "value": "8 103 156 daily" },
+        { "title": "geo", "value": "240" },
+        { "title": "bids", "value": "from $0.01" },
+        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+      ]
     }
   },
   {
