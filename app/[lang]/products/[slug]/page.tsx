@@ -21,7 +21,7 @@ export default async function Product({
   params: { lang, slug },
 }: ProductProps) {
   const dict = await getDictionary(lang, "products");
-  const product = dict.find((product) => product.slug === slug)?.detail;
+  const product = dict.find((product) => product.slug === slug);
 
   if (!product) {
     notFound();
@@ -46,10 +46,10 @@ export default async function Product({
                 titleFont.className
               )}
             >
-              {product.cta}
+              {product.detail.cta}
             </p>
             <p className="lg:text-[18px] lg:leading-paragraph text-dark">
-              {product.lead}
+              {product.detail.lead}
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default async function Product({
             >
               <Image
                 className="h-[240px] w-auto lg:h-[320px] object-contain"
-                src={product.card.image}
+                src={product.image}
                 alt={product.title}
                 width={320}
                 height={320}
@@ -77,18 +77,18 @@ export default async function Product({
                   titleFont.className
                 )}
               >
-                {product.card.title}
+                {product.detail.card.title}
               </h3>
               <p className="leading-paragraph text-dark">
-                {product.card.description}
+                {product.detail.card.description}
               </p>
               <PrimaryButton className="lg:w-fit lg:py-6 lg:px-8">
-                {product.card.cta}
+                {product.detail.card.cta}
               </PrimaryButton>
             </div>
           </div>
           <div className="p-3 lg:p-8 grid grid-cols-1 lg:grid-cols-4 gap-2 rounded lg:rounded-md bg-light-violet">
-            {product.stats.map(({ title, value }) => (
+            {product.detail.stats.map(({ title, value }) => (
               <div
                 key={title}
                 className="flex flex-col gap-0.5 lg:gap-1 p-3 lg:px-8 lg:py-4 h-fit rounded lg:rounded-md bg-white border-2 border-violet text-center"
@@ -109,7 +109,7 @@ export default async function Product({
           </div>
         </div>
       </div>
-      <OtherFormats />
+      <OtherFormats slug={slug} products={dict} />
     </div>
   );
 }

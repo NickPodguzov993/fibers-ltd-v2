@@ -19,3 +19,4 @@
 - [ ] Update all carousels (buttons and its icon)
 - [ ] Home/Products content, click hints
 - [ ] Home/Directions change description on direction change
+- [ ] Fix mobile sliders

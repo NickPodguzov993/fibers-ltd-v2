@@ -87,7 +87,13 @@ export function Reviews({ title, reviews }: ReviewsProps) {
             )}
             onClick={() => instanceRef.current?.moveToIdx(currentSlide - 1)}
           >
-            {"<"}
+            <Image
+              className="fill-white rotate-180"
+              src="/icons/arrow-forward.svg"
+              alt=""
+              width={24}
+              height={24}
+            />
           </button>
           <button
             className={clsx(
@@ -96,7 +102,13 @@ export function Reviews({ title, reviews }: ReviewsProps) {
             )}
             onClick={() => instanceRef.current?.moveToIdx(currentSlide + 1)}
           >
-            {">"}
+            <Image
+              className="fill-white"
+              src="/icons/arrow-forward.svg"
+              alt=""
+              width={24}
+              height={24}
+            />
           </button>
           {sliderReady && (
             <div className="flex justify-center">

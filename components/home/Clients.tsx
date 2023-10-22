@@ -89,13 +89,25 @@ export function Clients({ title, clients }: ClientsProps) {
             className="absolute -left-3 lg:-left-6 top-7 lg:top-8 px-2 py-4 bg-accent text-white rounded-sm"
             onClick={() => instanceRef.current?.moveToIdx(currentSlide - 1)}
           >
-            {"<"}
+            <Image
+              className="fill-white rotate-180"
+              src="/icons/arrow-forward.svg"
+              alt=""
+              width={24}
+              height={24}
+            />
           </button>
           <button
             className="absolute -right-3 lg:-right-6 top-7 lg:top-8 px-2 py-4 bg-accent text-white rounded-sm"
             onClick={() => instanceRef.current?.moveToIdx(currentSlide + 1)}
           >
-            {">"}
+            <Image
+              className="fill-white"
+              src="/icons/arrow-forward.svg"
+              alt=""
+              width={24}
+              height={24}
+            />
           </button>
           {sliderReady && (
             <div className="flex justify-center">

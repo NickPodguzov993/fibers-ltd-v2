@@ -18,7 +18,12 @@ export default async function Home({ params: { lang } }: PropsWithLanguage) {
       <Hero {...dict.hero} />
       <Products
         {...dict.products}
-        products={products.map(({ slug, short }) => ({ slug, ...short }))}
+        products={products.map(({ slug, title, image, short }) => ({
+          slug,
+          title,
+          image,
+          ...short,
+        }))}
       />
       <Values {...dict.values} />
       <MainPartner />
