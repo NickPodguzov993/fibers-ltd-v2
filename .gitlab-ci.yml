@@ -16,6 +16,7 @@ Build:
           --label "org.opencontainers.image.title=$CI_PROJECT_TITLE"
           --label "org.opencontainers.image.created=$CI_JOB_STARTED_AT"
           --label "org.opencontainers.image.revision=$CI_COMMIT_SHA"
+          --tag $REGISTRY/fibers-ltd-v2:$CI_COMMIT_SHA:$CI_COMMIT_SHA
           .
         - docker push $REGISTRY/fibers-ltd-v2:$CI_COMMIT_SHA
 
