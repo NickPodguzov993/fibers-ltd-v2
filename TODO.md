@@ -6,13 +6,17 @@
   - [x] Input (text, password)
   - [x] Modal (common modal in desktop, full-width scrollable with fixed header in mobile)
 - Layout
+  - [x] Cookies notification component
   - [ ] Mobile menu component
-  - [ ] Cookies notification component
+  - [ ] Signup modal + mobile floating button
+  - [ ] Vacancies "other vacancies" mobile modal
 
 ---
 
-- [x] Update header, footer
 - [ ] Forgot password, Learn more on hero, Send cv
-- [ ] Replace logo image
+- [x] Update header, footer
+- [x] Replace logo image
+- [ ] Update all carousels (buttons and its icon)
 - [ ] Home/Products content, click hints
 - [ ] Home/Directions change description on direction change
+- [ ] Fix mobile sliders
