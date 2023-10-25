@@ -57,6 +57,9 @@ const config: Config = {
       dark: "#212121",
       error: "#E53935",
     },
+    fill: {
+      accent: "#FF376C",
+    },
     outlineColor: {
       dark: "#212121",
     },

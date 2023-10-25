@@ -99,6 +99,7 @@ export function Header({ links, signup, login }: HeaderProps) {
       />
       <SignupModal
         open={isSignupOpened}
+        onLogin={() => setLoginOpened(true)}
         onClose={() => setSignupOpened(false)}
       />
       <LoginModal
