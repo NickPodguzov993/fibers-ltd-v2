@@ -7,7 +7,7 @@ import {
 import { Modal } from "../shared/modal";
 import { Input } from "../shared/inputs";
 
-type SignupModalProps = {
+type LoginModalProps = {
   open: boolean;
   onSignup: () => void;
   onClose: () => void;
@@ -18,7 +18,7 @@ type LoginForm = {
   password: string;
 };
 
-export function LoginModal({ open, onSignup, onClose }: SignupModalProps) {
+export function LoginModal({ open, onSignup, onClose }: LoginModalProps) {
   const {
     register,
     handleSubmit,
@@ -70,6 +70,7 @@ export function LoginModal({ open, onSignup, onClose }: SignupModalProps) {
         </LinkButton>
         <PrimaryButton type="submit">Log in</PrimaryButton>
         <TransparentButton
+          type="button"
           className="!p-0 !text-accent-link"
           onClick={onSignupClick}
         >

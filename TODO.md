@@ -8,7 +8,7 @@
 - Layout
   - [x] Cookies notification component
   - [ ] Mobile menu component
-  - [ ] Signup modal + mobile floating button
+  - [x] Signup modal + mobile floating button
   - [ ] Vacancies "other vacancies" mobile modal
 
 ---
@@ -16,7 +16,7 @@
 - [ ] Forgot password, Learn more on hero, Send cv
 - [x] Update header, footer
 - [x] Replace logo image
-- [ ] Update all carousels (buttons and its icon)
-- [ ] Home/Products content, click hints
+- [x] Update all carousels (buttons and its icon)
+- [-] Home/Products content, click hints
 - [ ] Home/Directions change description on direction change
 - [ ] Fix mobile sliders
