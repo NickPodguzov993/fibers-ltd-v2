@@ -61,6 +61,7 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
     watch,
     setValue,
     clearErrors,
+    reset,
     control,
     formState: { isSubmitted, errors },
   } = useForm<SignupForm>({
@@ -71,6 +72,10 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
   const type = watch("type");
   const socialVal = watch("socialNet");
   const social = socialNets.find(({ value }) => socialVal === value);
+
+  useEffect(() => {
+    reset();
+  }, [open, reset]);
 
   useEffect(() => {
     clearErrors();

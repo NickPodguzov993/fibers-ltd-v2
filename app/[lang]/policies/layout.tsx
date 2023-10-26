@@ -23,7 +23,7 @@ export default async function PoliciesLayout({
         </h2>
         <PoliciesNavigation docs={dict.docs} />
       </div>
-      <div className="pt-12 flex flex-col lg:w-[800px] flex-shrink-0 gap-8 lg:gap-16">
+      <div className="pt-12 lg:pt-0 flex flex-col lg:w-[800px] flex-shrink-0 gap-8 lg:gap-16">
         <h2
           className={clsx(
             "text-[32px] lg:text-[64px] font-bold text-dark",
