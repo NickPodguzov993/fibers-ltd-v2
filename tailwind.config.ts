@@ -79,6 +79,6 @@ const config: Config = {
       cookies: "0px 10px 16px 0px rgba(0, 0, 0, 0.08);",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;
