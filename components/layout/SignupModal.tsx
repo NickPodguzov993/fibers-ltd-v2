@@ -31,6 +31,7 @@ const socialNets = [
 type SignupModalProps = {
   open: boolean;
   onLogin: () => void;
+  onRegistered: () => void;
   onClose: () => void;
 };
 
@@ -53,7 +54,12 @@ type SignupForm = {
   };
 };
 
-export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
+export function SignupModal({
+  open,
+  onLogin,
+  onRegistered,
+  onClose,
+}: SignupModalProps) {
   const pathName = usePathname();
   const {
     register,
@@ -87,6 +93,8 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
   }
   function onSubmit(values: SignupForm) {
     console.log(values);
+    onClose();
+    onRegistered();
     return;
   }
 

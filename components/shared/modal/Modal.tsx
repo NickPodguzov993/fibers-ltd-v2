@@ -5,6 +5,8 @@ import ReactModal from "react-responsive-modal";
 
 type ModalProps = PropsWithChildren & {
   className?: string;
+  headerClass?: string;
+  closeClass?: string;
   title?: string;
   open?: boolean;
   onClose?: () => void;
@@ -12,6 +14,8 @@ type ModalProps = PropsWithChildren & {
 
 export function Modal({
   className,
+  headerClass,
+  closeClass,
   title,
   open = false,
   children,
@@ -46,8 +50,10 @@ export function Modal({
           "!p-0 !m-0 !mx-auto !mt-auto lg:!my-auto !flex flex-col w-screen max-h-[90vh] rounded-t-sm lg:rounded !overflow-hidden",
           className
         ),
-        closeButton:
+        closeButton: clsx(
           "!top-2.5 lg:!top-2 !right-1.5 lg:!right-2 !p-4 rounded-sm transition-colors hover:bg-accent/10 active:bg-accent/20 outline-none",
+          closeClass
+        ),
       }}
       open={open}
       closeIcon={closeIcon}
@@ -57,7 +63,8 @@ export function Modal({
       <div
         className={clsx(
           "py-6 lg:pt-8 lg:pb-7 text-center text-2xl lg:text-[32px] leading-none font-bold text-dark transition-shadow",
-          isScrolled && "shadow-modal"
+          isScrolled && "shadow-modal",
+          headerClass
         )}
       >
         {title}
