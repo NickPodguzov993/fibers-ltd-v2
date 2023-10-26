@@ -9,6 +9,7 @@ import { PrimaryButton, LinkButton } from "../shared/buttons";
 import { SignupModal } from "./SignupModal";
 import { LoginModal } from "./LoginModal";
 import { MobileMenuModal } from "./MobileMenuModal";
+import { SignupConfirmModal } from "./SignupConfirm";
 
 type HeaderProps = {
   links: { title: string; link: string }[];
@@ -19,6 +20,7 @@ type HeaderProps = {
 export function Header({ links, signup, login }: HeaderProps) {
   const [isLoginOpened, setLoginOpened] = useState(false);
   const [isSignupOpened, setSignupOpened] = useState(false);
+  const [isConfirmOpened, setConfirmOpened] = useState(false);
   const [isMenuOpened, setMenuOpened] = useState(false);
   const pathName = usePathname();
   const isEng = pathName.startsWith("/en");
@@ -100,7 +102,12 @@ export function Header({ links, signup, login }: HeaderProps) {
       <SignupModal
         open={isSignupOpened}
         onLogin={() => setLoginOpened(true)}
+        onRegistered={() => setConfirmOpened(true)}
         onClose={() => setSignupOpened(false)}
+      />
+      <SignupConfirmModal
+        open={isConfirmOpened}
+        onClose={() => setConfirmOpened(false)}
       />
       <LoginModal
         open={isLoginOpened}

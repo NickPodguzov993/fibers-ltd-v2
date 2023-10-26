@@ -1,16 +1,37 @@
 "use client";
-import { useForm } from "react-hook-form";
-import { Modal } from "../shared/modal";
-import { Input, TextArea } from "../shared/inputs";
-import Link from "next/link";
-import { PrimaryButton } from "../shared/buttons";
-import { RadioInput } from "../shared/inputs";
-import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { Controller, useForm } from "react-hook-form";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import { Modal } from "../shared/modal";
+import {
+  Input,
+  RadioInput,
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+  TextArea,
+} from "../shared/inputs";
+import { PrimaryButton } from "../shared/buttons";
+
+const socialNets = [
+  { value: "qq", title: "Qq" },
+  { value: "momo", title: "Momo" },
+  { value: "facebook", title: "Facebook" },
+  { value: "whatsapp", title: "Whatsapp" },
+  { value: "wechat", title: "Wechat" },
+  { value: "telegram", title: "Telegram" },
+  { value: "skype", title: "Skype" },
+];
 
 type SignupModalProps = {
   open: boolean;
   onLogin: () => void;
+  onRegistered: () => void;
   onClose: () => void;
 };
 
@@ -33,7 +54,12 @@ type SignupForm = {
   };
 };
 
-export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
+export function SignupModal({
+  open,
+  onLogin,
+  onRegistered,
+  onClose,
+}: SignupModalProps) {
   const pathName = usePathname();
   const {
     register,
@@ -41,6 +67,8 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
     watch,
     setValue,
     clearErrors,
+    reset,
+    control,
     formState: { isSubmitted, errors },
   } = useForm<SignupForm>({
     defaultValues: {
@@ -48,6 +76,12 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
     },
   });
   const type = watch("type");
+  const socialVal = watch("socialNet");
+  const social = socialNets.find(({ value }) => socialVal === value);
+
+  useEffect(() => {
+    reset();
+  }, [open, reset]);
 
   useEffect(() => {
     clearErrors();
@@ -57,7 +91,10 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
     onLogin();
     onClose();
   }
-  function onSubmit() {
+  function onSubmit(values: SignupForm) {
+    console.log(values);
+    onClose();
+    onRegistered();
     return;
   }
 
@@ -115,6 +152,12 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
               error={errors["password_repeat"]?.message}
               {...register("password_repeat", {
                 required: "Repeat password required",
+
+                validate: (val: string) => {
+                  if (watch("password") !== val) {
+                    return "Your passwords do not match";
+                  }
+                },
               })}
             />
           </>
@@ -157,33 +200,64 @@ export function SignupModal({ open, onLogin, onClose }: SignupModalProps) {
             </>
           )}
           <>
-            <Input
-              placeholder="Social network"
-              error={errors["socialNet"]?.message}
-              {...register("socialNet")}
+            <Controller
+              name="socialNet"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  name={field.name}
+                  onValueChange={field.onChange}
+                  disabled={field.disabled}
+                >
+                  <SelectTrigger
+                    placeholder={!field.value ? "show" : undefined}
+                  >
+                    <SelectValue placeholder="Social network" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectItem value={null!}>None</SelectItem>
+                      {socialNets.map(({ title, value }) => (
+                        <SelectItem key={value} value={value}>
+                          {title}
+                        </SelectItem>
+                      ))}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              )}
             />
             <Input
               placeholder="Phone number"
               error={errors["phone"]?.message}
               {...register("phone")}
             />
-            <Input
-              placeholder="Social network nickname"
-              error={errors["socialNetContact"]?.message}
-              {...register("socialNetContact", {
-                required: "Social network nickname required",
-              })}
-            />
+            {social && (
+              <Input
+                placeholder={`${social.title} nickname*`}
+                error={errors["socialNetContact"]?.message}
+                {...register("socialNetContact", {
+                  required: `${social.title} nickname required`,
+                })}
+              />
+            )}
           </>
         </div>
         <p className="text-dark text-center">
           By clicking the signup button you are agreeing to the{" "}
-          <Link href="#" className="text-accent-link">
+          <Link
+            className="text-accent-link"
+            href={`/${pathName.split("/")[1]}/policies/terms-and-conditions`}
+            onClick={onClose}
+          >
             terms & conditions{" "}
           </Link>
-          and
-          <Link href="#" className="text-accent-link">
-            {" "}
+          and{" "}
+          <Link
+            className="text-accent-link"
+            href={`/${pathName.split("/")[1]}/policies/privacy-policy`}
+            onClick={onClose}
+          >
             privacy policy
           </Link>
         </p>

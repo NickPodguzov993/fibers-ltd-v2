@@ -6,12 +6,14 @@ type PrimaryButtonProps = PropsWithChildren & {
   type?: "button" | "submit";
   href?: string;
   onClick?: MouseEventHandler;
+  tabIndex?: number;
 };
 
 export function PrimaryButton({
   className,
   type,
   children,
+  tabIndex,
   onClick,
 }: PrimaryButtonProps) {
   return (
@@ -21,6 +23,7 @@ export function PrimaryButton({
         className
       )}
       type={type}
+      tabIndex={tabIndex}
       onClick={onClick}
     >
       {children}

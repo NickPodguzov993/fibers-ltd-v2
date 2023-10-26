@@ -1,4 +1,7 @@
+"use client";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+
 import {
   LinkButton,
   PrimaryButton,
@@ -22,8 +25,13 @@ export function LoginModal({ open, onSignup, onClose }: LoginModalProps) {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { isSubmitted, errors },
   } = useForm<LoginForm>({});
+
+  useEffect(() => {
+    reset();
+  }, [open, reset]);
 
   function onSignupClick() {
     onSignup();
