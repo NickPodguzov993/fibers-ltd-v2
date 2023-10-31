@@ -78,7 +78,11 @@ export function Products({ title, products }: ProductsProps) {
               ))}
             </div>
           </div>
-          <ProductsModal open={showAll} onClose={() => setShowAll(false)} />
+          <ProductsModal
+            products={products}
+            open={showAll}
+            onClose={() => setShowAll(false)}
+          />
         </>
       ) : (
         <div className="grid grid-cols-2 gap-4">

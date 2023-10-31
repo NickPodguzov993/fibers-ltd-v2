@@ -1,6 +1,7 @@
 - [ ] Forgot password, Learn more on hero, Send cv actions?
 
-- [ ] Mobile menu component
+- [x] Mobile menu component
+- [ ] Signup error notif
 - [ ] Home/Products click hints
 - [ ] Home/Directions change description on direction change
 - [ ] Vacancies "other vacancies" mobile modal

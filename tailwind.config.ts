@@ -44,6 +44,7 @@ const config: Config = {
       "light-green": "#F1FFF0",
     },
     borderColor: {
+      transparent: "transparent",
       primary: "#F5F5F5",
       accent: "#FF376C",
       error: "#E53935",
