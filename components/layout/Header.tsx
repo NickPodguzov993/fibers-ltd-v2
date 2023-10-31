@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import MenuIcon from "../../assets/icons/menu.svg";
 import { PrimaryButton, LinkButton } from "../shared/buttons";
 import { SignupModal } from "./SignupModal";
 import { LoginModal } from "./LoginModal";
@@ -71,7 +72,7 @@ export function Header({ links, signup, login }: HeaderProps) {
                 {login}
               </PrimaryButton>
               <LinkButton
-                className="leading-paragraph"
+                className="hidden lg:block leading-paragraph"
                 href={pathName.replace(
                   isEng ? "/en" : "/zh",
                   isEng ? "/zh" : "/en"
@@ -83,20 +84,28 @@ export function Header({ links, signup, login }: HeaderProps) {
                 className="px-2 py-4 flex lg:hidden justify-center items-center"
                 onClick={() => setMenuOpened(true)}
               >
-                menu
+                <MenuIcon />
               </button>
             </div>
           </div>
         </div>
       </div>
       <PrimaryButton
-        className="fixed right-4 bottom-4 lg:hidden text-white bg-accent hover:bg-accent/90 active:bg-accent/90 rounded-sm z-50"
+        className={clsx(
+          "fixed right-4 bottom-4 lg:hidden text-white bg-accent hover:bg-accent/90 active:bg-accent/90 rounded-sm z-40",
+          pathName.split("/").length > 2 && "hidden"
+        )}
         onClick={() => setSignupOpened(true)}
       >
-        Sign up
+        {signup}
       </PrimaryButton>
       <MobileMenuModal
+        links={links}
+        signup={signup}
+        login={login}
         open={isMenuOpened}
+        onSignup={() => setSignupOpened(true)}
+        onLogin={() => setLoginOpened(true)}
         onClose={() => setMenuOpened(false)}
       />
       <SignupModal

@@ -1,13 +1,13 @@
 import "react-responsive-modal/styles.css";
 import clsx from "clsx";
-import { PropsWithChildren, UIEvent, useState } from "react";
+import { PropsWithChildren, ReactNode, UIEvent, useState } from "react";
 import ReactModal from "react-responsive-modal";
 
 type ModalProps = PropsWithChildren & {
   className?: string;
   headerClass?: string;
   closeClass?: string;
-  title?: string;
+  title?: string | ReactNode;
   open?: boolean;
   onClose?: () => void;
 };

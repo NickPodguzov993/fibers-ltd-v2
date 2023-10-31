@@ -39,7 +39,7 @@ export function CookieInformation({
     <div
       className={clsx(
         "fixed container inset-x-4 lg:inset-x-0 mx-auto w-fit bottom-4 p-4 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8 bg-white shadow-cookies rounded z-50 transition-transform",
-        isShown ? "translate-y-0" : "translate-y-32"
+        isShown ? "translate-y-0" : "translate-y-96"
       )}
     >
       <p className="text-[12px] lg:text-[16px] font-bold text-black text-center">
