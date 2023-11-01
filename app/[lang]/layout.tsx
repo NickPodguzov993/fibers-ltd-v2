@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { PropsWithLanguage, i18n } from "@/lib/i18n";
 import { textFont } from "@/lib/fonts";
 import { Layout } from "@/components/layout";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Fibers LTD",
@@ -26,6 +27,15 @@ export default function RootLayout({
       <body className={textFont.className}>
         <Layout lang={lang}>{children}</Layout>
       </body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-NWE2YPLWC6" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NWE2YPLWC6');
+        `}
+      </Script>
     </html>
   );
 }
