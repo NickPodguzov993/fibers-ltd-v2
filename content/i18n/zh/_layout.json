@@ -2,49 +2,49 @@
   "email": "info@fibersltd.com",
   "header": {
     "links": [
-      { "title": "About us", "link": "/en/about-us" },
-      { "title": "Vacancies", "link": "/en/vacancies" },
-      { "title": "Contacts", "link": "/en/contacts" },
-      { "title": "Policies", "link": "/en/policies" }
+      { "title": "關於我們", "link": "/zh/about-us" },
+      { "title": "職位空缺", "link": "/zh/vacancies" },
+      { "title": "聯絡方式", "link": "/zh/contacts" },
+      { "title": "政策", "link": "/zh/policies" }
     ],
-    "signup": "Sign up",
-    "login": "Log in"
+    "signup": "報名",
+    "login": "登入"
   },
   "footer": {
-    "contact": "Contact us",
+    "contact": "聯絡我們",
     "phone": "+35799 930263",
     "navigation": [
       {
-        "title": "About",
+        "title": "關於",
         "links": [
-          { "title": "About us", "link": "/en/about-us" },
-          { "title": "Vacancies", "link": "/en/vacancies" },
-          { "title": "Contacts", "link": "/en/contacts" }
+          { "title": "關於我們", "link": "/zh/about-us" },
+          { "title": "職位空缺", "link": "/zh/vacancies" },
+          { "title": "聯絡方式", "link": "/zh/contacts" }
         ]
       },
       {
-        "title": "Policies",
+        "title": "政策",
         "links": [
           {
-            "title": "Terms and Conditions",
+            "title": "條款與條件",
             "link": "/en/policies/terms-and-conditions"
           },
-          { "title": "Privacy Policy", "link": "/en/policies/privacy-policy" }
+          { "title": "隱私權政策", "link": "/en/policies/privacy-policy" }
         ]
       }
     ],
     "licenses": [
-      "176 Joo Chiat Road #02-02, Singapore (427447)",
-      "Registration number: 201922390D"
+      "176 如切路 #02-02, 新加坡 (427447)",
+      "登記號碼：201922390D"
     ],
-    "copyright": "© Copyright 2023. Fibers PTE LTD"
+    "copyright": "© 版權 2023. Fibers PTE LTD"
   },
   "cookie": {
-    "cta": "Okay",
-    "description": "We care about your data, and we'd love to use cookies to make your experience better",
+    "cta": "好的",
+    "description": "我們關心您的數據，並且很樂意使用 cookie 來改善您的體驗",
     "policy": {
-      "title": "Privacy policy",
-      "slug": "privacy-policy"
+      "title": "隱私權政策",
+      "slug": "隱私權政策"
     }
   }
 }

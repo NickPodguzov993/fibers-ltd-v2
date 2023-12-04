@@ -1,18 +1,18 @@
 {
-  "title": "Contacts",
-  "description": "We appreciate your interest in reaching out to us. Whether you have a question, feedback, or want to explore potential collaborations, we're here to assist you. Our team is committed to providing exceptional customer service and building long-lasting relationships with our valued clients",
+  "title": "聯絡方式",
+  "description": "感謝您有興趣與我們聯繫。無論您有疑問、回饋或想要探索潛在的合作，我們都會隨時為您提供協助。我們的團隊致力於提供卓越的客戶服務並與尊貴的客戶建立持久的關係",
   "cards": [
     {
-      "title": "Email adress:",
+      "title": "電子郵件地址:",
       "value": "info@fibersltd.com",
-      "cta": "You can write us",
+      "cta": "您可以寫信給我們",
       "link": "mailto:info@fibersltd.com"
     },
     {
-      "title": "Phone number:",
+      "title": "電話號碼:",
       "value": "+35799 930263",
-      "cta": "You can call us",
-      "link": "tel:+35799930263"
+      "cta": "您可以致電我們",
+      "link": "電話:+35799930263"
     }
   ]
 }
