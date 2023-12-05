@@ -10,6 +10,7 @@
       "minBid": "starts at 0.45$ CPM"
     },
     "detail": {
+      "titleFormats": "Marketing formats",
       "title": "On-click (popunder)",
       "cta": "Buy Onclick traffic / CPM & CPA goal",
       "lead": "Get leads with most popular ad format",

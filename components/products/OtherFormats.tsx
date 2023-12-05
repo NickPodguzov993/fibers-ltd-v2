@@ -9,6 +9,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { titleFont } from "@/lib/fonts";
 
 type OtherFormatsProps = {
+  titleFormats:string
   slug: string;
   products: {
     title: string;
@@ -17,7 +18,7 @@ type OtherFormatsProps = {
   }[];
 };
 
-export function OtherFormats({ slug, products }: OtherFormatsProps) {
+export function OtherFormats({ slug, products,titleFormats }: OtherFormatsProps) {
   const pathName = usePathname();
   const [domReady, setDomReady] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
