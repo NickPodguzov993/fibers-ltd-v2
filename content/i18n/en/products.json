@@ -4,6 +4,8 @@
     "slug": "one-click",
     "image": "/images/products/on-click.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.45$ CPM"
     },
@@ -29,6 +31,8 @@
     "slug": "tab-links",
     "image": "/images/products/tab-links.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 30M traffic",
       "minBid": "starts at 0.025$ CPM"
     },
@@ -54,6 +58,8 @@
     "slug": "in-app",
     "image": "/images/products/in-app.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "up to 5 million impressions",
       "minBid": "CPM - 0.68$"
     },
@@ -79,6 +85,8 @@
     "slug": "interstitial",
     "image": "/images/products/interstitial.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.1$ CPM"
     },
@@ -104,6 +112,8 @@
     "slug": "in-page",
     "image": "/images/products/in-page.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.005$ CPC"
     },
@@ -129,6 +139,8 @@
     "slug": "notification-widget",
     "image": "/images/products/notification-widget.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "520 480 clicks",
       "minBid": "CPC from $0.0012"
     },
@@ -154,6 +166,8 @@
     "slug": "banner",
     "image": "/images/products/banner.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 1B traffic",
       "minBid": "starts at 0.002$ CPM"
     },
@@ -179,6 +193,8 @@
     "slug": "native-ads",
     "image": "/images/products/native-ads.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 180M traffic",
       "minBid": "starts at 0.001$ CPM"
     },
@@ -204,6 +220,8 @@
     "slug": "web-push",
     "image": "/images/products/web-push.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 1B clicks",
       "minBid": "0.015$ CPM"
     },
@@ -229,6 +247,8 @@
     "slug": "content-fee",
     "image": "/images/products/content-fee.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 50K traffic",
       "minBid": "starts at 0.002$ CPC"
     },
@@ -254,6 +274,8 @@
     "slug": "in-stream-video",
     "image": "/images/products/in-stream-video.png",
     "short": {
+      "daily": "Daily Volume",
+      "bid": "Min Bid",
       "volume": "over 10M impressions",
       "minBid": "starts at 0.6$"
     },

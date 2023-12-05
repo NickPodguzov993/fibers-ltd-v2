@@ -1,103 +1,127 @@
 {
   "hero": {
-    "title": "Fibers",
-    "subtitle": "Secure & Easy to use",
-    "description": "Boost your visibility and attract new customers with our innovative online advertising strategies – your success is our mission!",
-    "cta": "Buy traffic",
-    "about": "Learn more",
+    "title": "纖維",
+    "subtitle": "安全且易於使用",
+    "description": "透過我們創新的線上廣告策略提高您的知名度並吸引新客戶 - 您的成功就是我們的使命！",
+    "cta": "購買流量",
+    "about": "了解更多",
     "metrics": [
-      { "title": "daily traffic", "value": "4,55 bln+" },
-      { "title": "geo", "value": "200+" },
-      { "title": "ad format", "value": "11" },
-      { "title": "clients per day", "value": "12 000+" }
+      {
+        "title": "每日交通",
+        "value": "4,55 \n十億+"
+      },
+      {
+        "title": "地理",
+        "value": "200+"
+      },
+      {
+        "title": "廣告格式",
+        "value": "11"
+      },
+      {
+        "title": "每天的客戶數",
+        "value": "12 000+"
+      }
     ]
   },
   "products": {
-    "title": "Our products"
+    "title": "我們的產品",
+    "buttonShow": "顯示所有",
+    "buttonHide": "隱藏"
   },
   "values": {
-    "title": "Our values",
+    "title": "我們的價值",
     "values": [
       {
-        "title": "Innovation and Creativity",
-        "description": "We believe that innovation and a creative approach are what keep us ahead in the ever-changing world of internet advertising. Our team constantly explores new technologies and strategies to provide you with unique solutions that drive your business's growth. We take pride in our ability to turn creative ideas into successful advertising campaigns, making your brand more expressive and appealing to your target audience.",
+        "title": "創新與創造力",
+        "description": "我們相信，創新和創造性方法使我們在不斷變化的網路廣告世界中保持領先地位。我們的團隊不斷探索新技術和策略，為您提供獨特的解決方案，推動您的業務成長。我們為能夠將創意轉化為成功的廣告活動而感到自豪，使您的品牌更具表現力，對目標受眾更具吸引力。",
         "image": "/images/values-innovation.png"
       },
       {
-        "title": "Professionalism and Efficiency",
-        "description": "Our team consists of highly skilled professionals ready to ensure the maximum efficiency of your advertising projects. We base our work on in-depth market knowledge and best practices to create solutions that achieve your goals. Our professionalism is reflected in the quality of service and results we achieve for you.",
+        "title": "專業、高效",
+        "description": "我們的團隊由高技能的專業人士組成，隨時準備確保您的廣告項目達到\u200B\u200B最高效率。我們的工作以深入的市場知識和最佳實踐為基礎，創建可實現您目標的解決方案。我們的專業體現在我們為您提供的服務品質和成果。",
         "image": "/images/values-proffesionalism.png"
       },
       {
-        "title": "Client-Centric Approach",
-        "description": "You, as the client, are our top priority. We listen to your needs and aim to understand your unique situation. Our goal is to create advertising campaigns that align most accurately with your objectives and budget. We maintain open communication and are willing to adapt our solutions to meet your expectations and help you achieve success online.",
+        "title": "以客戶為中心的方法",
+        "description": "作為客戶，您是我們的首要任務。我們傾聽您的需求，旨在了解您的獨特情況。我們的目標是創建最符合您的目標和預算的廣告活動。我們保持開放的溝通，並願意調整我們的解決方案以滿足您的期望並幫助您取得線上成功。",
         "image": "/images/values-clients.png"
       }
     ]
   },
+  "content": {
+    "partner": {
+      "owrPartner": "自己的主要合作夥伴",
+      "title": "Money Cat",
+      "description": "MoneyCat - 菲律賓最有信譽的即時現金貸款線上網站，手續簡單，放款快捷，專業的支援人員將滿足客戶的不同需求。\n\n即時線上貸款是一種線上分期信貸形式，還款條件寬鬆。",
+      "cta": "立即透過 MoneyCat 取得現金",
+      "link": "https://moneycat.ph/",
+      "image": "/images/money-cat.png"
+    }
+  },
   "reviews": {
-    "title": "Experts about us",
+    "title": "專家關於我們",
     "reviews": [
       {
-        "name": "Villiam Jons",
-        "position": "Marketing Director",
-        "comment": "Collaborating with Fibers has brought us significant growth in our online presence. Their professional approach and results speak for themselves.",
+        "name": "威廉瓊斯",
+        "position": "行銷總監",
+        "comment": "與 Fibers 的合作為我們的線上業務帶來了顯著成長。他們的專業方法和結果不言而喻。",
         "photo": "/images/review-villiam.png"
       },
       {
-        "name": "John Smith",
-        "position": "Chief Analyst",
-        "comment": "I'm impressed by how Fibers adapts to market changes and develops strategies that work. They are true experts in the world of internet advertising",
+        "name": "約翰史密斯",
+        "position": "首席分析師",
+        "comment": "Fibers 如何適應市場變化並制定有效的策略，給我留下了深刻的印象。他們在網路廣告領域是真正的專家",
         "photo": "/images/review-jhon.png"
       },
       {
-        "name": "Kevin Johnson",
-        "position": "Creative Director",
-        "comment": "Working with Fibers is an inspiration to our team. Their innovative design and creative solutions have made our advertising campaigns truly unique",
+        "name": "凱文·約翰遜",
+        "position": "創意總監",
+        "comment": "與 Fibers 的合作為我們的團隊帶來了靈感。他們的創新設計和創意解決方案使我們的廣告活動真正獨一無二",
         "photo": "/images/review-kevin.png"
       },
       {
-        "name": "Mark Davis",
-        "position": "Finance Director",
-        "comment": "Fibers demonstrates outstanding efficiency in managing our advertising budget. With them, we see a clear return on investment, which is rare in the market.",
+        "name": "馬克戴維斯",
+        "position": "財務總監",
+        "comment": "Fibers 在管理廣告預算方面展現了卓越的效率。有了它們，我們看到了明顯的投資回報，這在市場上是罕見的。",
         "photo": "/images/review-mark.png"
       }
     ]
   },
   "directions": {
-    "title": "Our directions",
-    "description": "Our directions encompass a wide range of opportunities in the world of internet advertising. We specialize in dating, app downloads, e-commerce, gaming, and many other areas. Our goal is to help your business achieve outstanding results online, regardless of the industry.",
+    "secondTitle": "應用程式下載",
+    "title": "我們的方向",
+    "description": "我們的方向涵蓋網路廣告領域的廣泛機會。我們專注於約會、應用程式下載、電子商務、遊戲和許多其他領域。我們的目標是幫助您的企業在網路上取得卓越的成果，無論哪個產業。",
     "directions": [
       {
-        "title": "Dating",
-        "description": "Our expertise in the dating vertical is unmatched. We specialize in creating tailored advertising campaigns that connect people looking for meaningful relationships. Let us help you find your target audience and bring love into their lives"
+        "title": "約會",
+        "description": "我們在約會垂直領域的專業知識是無與倫比的。我們專注於製作量身訂製的廣告活動，將尋求有意義關係的人聯繫起來。讓我們幫助您找到目標受眾並將愛帶入他們的生活"
       },
       {
-        "title": "App downloads",
-        "description": "Getting your app into the hands of users is crucial, and we excel at it. Our app download campaigns have a proven track record of boosting downloads and user engagement. Let us take your app to the top of the charts."
+        "title": "應用程式下載",
+        "description": "將您的應用程式交到用戶手中至關重要，我們擅長於此。我們的應用程式下載活動在提高下載量和用戶參與度方面有著良好的記錄。讓我們將您的應用程式推向排行榜榜首。"
       },
       {
-        "title": "Desktop downloads",
-        "description": "Desktop software still has a strong presence, and we know how to make it shine. Our strategies for desktop downloads are designed to increase installations and usage. Join us in the world of desktop software success."
+        "title": "桌面下載",
+        "description": "桌面軟體仍然擁有強大的影響力，我們知道如何讓它大放異彩。我們的桌面下載策略旨在增加安裝和使用。加入我們，進入桌面軟體成功的世界。"
       },
       {
-        "title": "E-commerce",
-        "description": "E-commerce is all about conversions, and we're experts in driving them. Whether you're selling products or services online, we have the tools and strategies to maximize your sales and revenue. Let's boost your e-commerce business together"
+        "title": "電子商務",
+        "description": "電子商務的關鍵在於轉化，而我們是推動轉換的專家。無論您是在線上銷售產品還是服務，我們都有工具和策略來最大限度地提高您的銷售額和收入。讓我們一起推動您的電子商務業務"
       },
       {
-        "title": "Games",
-        "description": "Gaming is a dynamic industry, and we're in tune with it. Our game-focused campaigns are designed to attract players, boost engagement, and increase revenue for game developers. Level up your game advertising with us"
+        "title": "遊戲",
+        "description": "遊戲是一個充滿活力的行業，我們與它保持一致。我們以遊戲為中心的活動旨在吸引玩家、提高參與度並增加遊戲開發者的收入。與我們一起提升您的遊戲廣告水平"
       }
     ]
   },
   "clients": {
-    "title": "Our clients",
+    "title": "我們的客戶",
     "clients": [
-      "/images/partner-1.png",
-      "/images/partner-2.png",
-      "/images/partner-3.png",
-      "/images/partner-4.png",
-      "/images/partner-5.png"
+      "/images/partner-alaro.png",
+      "/images/partner-pulsup.png",
+      "/images/partner-vilardo.png",
+      "/images/partner-techmore.png"
     ]
   }
 }

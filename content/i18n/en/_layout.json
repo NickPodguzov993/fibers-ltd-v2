@@ -33,6 +33,8 @@
         ]
       }
     ],
+    "licensesspan": ["Licenses"],
+    "phonenumber": ["Phone number"],
     "licenses": [
       "176 Joo Chiat Road #02-02, Singapore (427447)",
       "Registration number: 201922390D"

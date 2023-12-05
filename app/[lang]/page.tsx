@@ -26,8 +26,8 @@ export default async function Home({ params: { lang } }: PropsWithLanguage) {
         }))}
       />
       <Values {...dict.values} />
-      <MainPartner />
-      <Reviews {...dict.reviews} />\
+      <MainPartner {...dict.content}/>
+      <Reviews {...dict.reviews} />
       <Directions {...dict.directions} />
       <Clients {...dict.clients} />
     </div>

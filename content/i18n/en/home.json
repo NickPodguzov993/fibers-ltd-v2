@@ -6,14 +6,29 @@
     "cta": "Buy traffic",
     "about": "Learn more",
     "metrics": [
-      { "title": "daily traffic", "value": "4,55 bln+" },
-      { "title": "geo", "value": "200+" },
-      { "title": "ad format", "value": "11" },
-      { "title": "clients per day", "value": "12 000+" }
+      {
+        "title": "daily traffic",
+        "value": "4,55 bln+"
+      },
+      {
+        "title": "geo",
+        "value": "200+"
+      },
+      {
+        "title": "ad format",
+        "value": "11"
+      },
+      {
+        "title": "clients per day",
+        "value": "12 000+"
+      }
     ]
   },
+
   "products": {
-    "title": "Our products"
+    "title": "Our products",
+    "buttonShow": "Show all",
+    "buttonHide": "Hide"
   },
   "values": {
     "title": "Our values",
@@ -34,6 +49,16 @@
         "image": "/images/values-clients.png"
       }
     ]
+  },
+  "content" : {
+    "partner": {
+      "owrPartner": "Own main partner",
+      "title": "Money Cat",
+      "description": "MoneyCat - The most reputable instant cash loan online website in Philippines with simple procedures, quick disbursement and professional support staffs will meet the different needs of customers.\n\nAn instant Online Loan is an online installment form of credit with comfortable repayment terms.",
+      "cta": "Get cash today with MoneyCat",
+      "link": "https://moneycat.ph/",
+      "image": "/images/money-cat.png"
+    }
   },
   "reviews": {
     "title": "Experts about us",
@@ -65,6 +90,7 @@
     ]
   },
   "directions": {
+    "secondTitle": "App downloads",
     "title": "Our directions",
     "description": "Our directions encompass a wide range of opportunities in the world of internet advertising. We specialize in dating, app downloads, e-commerce, gaming, and many other areas. Our goal is to help your business achieve outstanding results online, regardless of the industry.",
     "directions": [

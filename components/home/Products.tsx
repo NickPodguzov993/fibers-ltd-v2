@@ -15,6 +15,8 @@ import { ProductsModal } from "./ProductsModal";
 
 type ProductsProps = {
   title: string;
+  buttonShow:string
+  buttonHide:string
   products: {
     title: string;
     volume: string;
@@ -24,7 +26,7 @@ type ProductsProps = {
   }[];
 };
 
-export function Products({ title, products }: ProductsProps) {
+export function Products({ title, products,buttonShow, buttonHide }: ProductsProps) {
   const isMobile = useMediaQuery("(max-width: 1023px)");
   const pathName = usePathname();
   const [domReady, setDomReady] = useState(false);
@@ -99,7 +101,7 @@ export function Products({ title, products }: ProductsProps) {
         className="lg:px-8 lg:py-6 lg:w-fit lg:self-center lg:text-[20px]"
         onClick={() => setShowAll((v) => !v)}
       >
-        {!showAll ? "Show all" : "Hide"}
+        {!showAll ? buttonShow : buttonHide}
       </PrimaryButton>
     </div>
   );

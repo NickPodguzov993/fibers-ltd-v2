@@ -1,276 +1,430 @@
 [
   {
-    "title": "One-click",
+    "title": "一鍵式",
     "slug": "one-click",
     "image": "/images/products/on-click.png",
     "short": {
-      "volume": "over 8M impressions",
-      "minBid": "starts at 0.45$ CPM"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過 800 萬次展示",
+      "minBid": "每千次展示費用 $0.45 起"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "從 $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Tab Links",
+    "title": "標籤連結",
     "slug": "tab-links",
     "image": "/images/products/tab-links.png",
     "short": {
-      "volume": "over 30M traffic",
-      "minBid": "starts at 0.025$ CPM"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過30M流量",
+      "minBid": "開始於 0.025$ CPM"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "從 $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "In-app",
+    "title": "應用內",
     "slug": "in-app",
     "image": "/images/products/in-app.png",
     "short": {
-      "volume": "up to 5 million impressions",
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "高達 500 萬次展示",
       "minBid": "CPM - 0.68$"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Interstitial",
+    "title": "插頁式",
     "slug": "interstitial",
     "image": "/images/products/interstitial.png",
     "short": {
-      "volume": "over 8M impressions",
-      "minBid": "starts at 0.1$ CPM"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過 800 萬次展示",
+      "minBid": "開始於 0.1$ CPM"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
         "cta": "Get started"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "Self-serve / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "In-page",
+    "title": "頁內",
     "slug": "in-page",
     "image": "/images/products/in-page.png",
     "short": {
+      "daily": "每日交易量",
+      "bid": "最低出價",
       "volume": "over 8M impressions",
       "minBid": "starts at 0.005$ CPC"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告？",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Notification Widget",
+    "title": "通知小工具",
     "slug": "notification-widget",
     "image": "/images/products/notification-widget.png",
     "short": {
+      "daily": "每日交易量",
+      "bid": "最低出價",
       "volume": "520 480 clicks",
       "minBid": "CPC from $0.0012"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "從 $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Banner",
+    "title": "橫幅",
     "slug": "banner",
     "image": "/images/products/banner.png",
     "short": {
-      "volume": "over 1B traffic",
-      "minBid": "starts at 0.002$ CPM"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過1B流量",
+      "minBid": "開始於 0.002$ CPM"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買Onclick流量 / CPM & CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 daily"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Native ads",
+    "title": "原生廣告",
     "slug": "native-ads",
     "image": "/images/products/native-ads.png",
     "short": {
+      "daily": "每日交易量",
+      "bid": "最低出價",
       "volume": "over 180M traffic",
       "minBid": "starts at 0.001$ CPM"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告？",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "從 $0.01"
+        },
+        {
+          "title": "方法",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Web-push",
+    "title": "網路推播",
     "slug": "web-push",
     "image": "/images/products/web-push.png",
     "short": {
-      "volume": "over 1B clicks",
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "點擊次數超過 1B",
       "minBid": "0.015$ CPM"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "ways",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "Content fee",
+    "title": "內容費",
     "slug": "content-fee",
     "image": "/images/products/content-fee.png",
     "short": {
-      "volume": "over 50K traffic",
-      "minBid": "starts at 0.002$ CPC"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過 50K 流量",
+      "minBid": "開始於 0.002$ CPC"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "ways",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   },
   {
-    "title": "In-stream video",
+    "title": "串流媒體影片",
     "slug": "in-stream-video",
     "image": "/images/products/in-stream-video.png",
     "short": {
-      "volume": "over 10M impressions",
-      "minBid": "starts at 0.6$"
+      "daily": "每日交易量",
+      "bid": "最低出價",
+      "volume": "超過 1000 萬次展示",
+      "minBid": "開始於 0.6$"
     },
     "detail": {
       "title": "On-click (popunder)",
-      "cta": "Buy Onclick traffic / CPM & CPA goal",
-      "lead": "Get leads with most popular ad format",
+      "cta": "購買 Onclick 流量/CPM 和 CPA 目標",
+      "lead": "透過最受歡迎的廣告格式獲取潛在客戶",
       "card": {
-        "title": "What are popunder ads or onclick ads?",
-        "description": "On-click popunder is an additional window that appears when the user makes a first click on the content page. It is one of the most effective ways to attract users' attention! We offer both mobile and desktop popunders, they are user-friendly and meet all Google requirements. When a user clicks anywhere on the page, a new window opens in the browser. The page remains invisible to the user, as the main page remains open",
-        "cta": "Get started"
+        "title": "什麼是彈出廣告或點擊廣告?",
+        "description": "點擊彈出視窗是用戶首次點擊內容頁面時出現的附加視窗。是吸引用戶注意力最有效的方法之一！我們提供行動和桌面彈出框，它們用戶友好且滿足所有 Google 要求。當使用者點擊頁面上的任意位置時，瀏覽器中會開啟一個新視窗。由於主頁保持開啟狀態，該頁面對使用者保持不可見",
+        "cta": "開始使用"
       },
       "stats": [
-        { "title": "traffic", "value": "8 103 156 daily" },
-        { "title": "geo", "value": "240" },
-        { "title": "bids", "value": "from $0.01" },
-        { "title": "ways", "value": "Self-serve / API / RTB / XML" }
+        {
+          "title": "交通",
+          "value": "8 103 156 日常的"
+        },
+        {
+          "title": "地理",
+          "value": "240"
+        },
+        {
+          "title": "出價",
+          "value": "from $0.01"
+        },
+        {
+          "title": "ways",
+          "value": "自助 / API / RTB / XML"
+        }
       ]
     }
   }
