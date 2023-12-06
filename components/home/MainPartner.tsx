@@ -2,17 +2,6 @@ import clsx from "clsx";
 import Image from "next/image";
 import {titleFont} from "@/lib/fonts";
 
-/*const content = {
-  title: "Our main partner",
-  partner: {
-    title: "Money Cat",
-    description:
-      "MoneyCat - The most reputable instant cash loan online website in Philippines with simple procedures, quick disbursement and professional support staffs will meet the different needs of customers.\n\nAn instant Online Loan is an online installment form of credit with comfortable repayment terms.",
-    cta: "Get cash today with MoneyCat",
-    link: "https://moneycat.ph/",
-    image: "/images/money-cat.png",
-  },
-};*/
 
 type ContentProps = {
     ownPartner: string

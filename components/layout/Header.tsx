@@ -26,6 +26,8 @@ export function Header({ links, signup, login }: HeaderProps) {
   const pathName = usePathname();
   const isEng = pathName.startsWith("/en");
 
+
+
   return (
     <>
       <div className="fixed inset-x-2 top-2 lg:top-4 lg:inset-x-4 flex p-0 lg:px-4 z-50">

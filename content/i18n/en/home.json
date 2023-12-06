@@ -124,5 +124,8 @@
       "/images/partner-vilardo.png",
       "/images/partner-techmore.png"
     ]
+  },
+"singUpModal" : {
+  "title": "SIng Up"
   }
 }
