@@ -11,6 +11,7 @@ import { titleFont } from "@/lib/fonts";
 type OtherFormatsProps = {
   titleFormats:string
   slug: string;
+  mainTitle:string;
   products: {
     title: string;
     slug: string;
@@ -18,7 +19,7 @@ type OtherFormatsProps = {
   }[];
 };
 
-export function OtherFormats({ slug, products,titleFormats }: OtherFormatsProps) {
+export function OtherFormats({ slug, products,mainTitle }: OtherFormatsProps) {
   const pathName = usePathname();
   const [domReady, setDomReady] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -65,6 +66,7 @@ export function OtherFormats({ slug, products,titleFormats }: OtherFormatsProps)
           )}
         >
           Marketing formats
+          {mainTitle}
         </h2>
       </div>
       {domReady && (
