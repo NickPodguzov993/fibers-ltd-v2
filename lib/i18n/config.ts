@@ -21,7 +21,14 @@ export const dictionaries = {
       import("@/content/i18n/en/contacts.json").then((m) => m.default),
     policies: () =>
       import("@/content/i18n/en/policies.json").then((m) => m.default),
+    product: () =>
+        import("@/content/i18n/en/product.json").then((m) => m.default),
+    modalSingUp: () =>
+        import("@/content/i18n/en/product.json").then((m) => m.default),
+    modalLogIn: () =>
+        import("@/content/i18n/en/product.json").then((m) => m.default),
   },
+
   zh: {
     layout: () =>
       import("@/content/i18n/zh/_layout.json").then((m) => m.default),
@@ -36,5 +43,11 @@ export const dictionaries = {
       import("@/content/i18n/zh/contacts.json").then((m) => m.default),
     policies: () =>
       import("@/content/i18n/zh/policies.json").then((m) => m.default),
+    product: () =>
+        import("@/content/i18n/zh/product.json").then((m) => m.default),
+    modalSingUp: () =>
+        import("@/content/i18n/zh/product.json").then((m) => m.default),
+    modalLogIn: () =>
+        import("@/content/i18n/zh/product.json").then((m) => m.default),
   },
 };

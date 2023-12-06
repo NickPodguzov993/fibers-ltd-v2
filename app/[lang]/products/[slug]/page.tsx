@@ -22,7 +22,8 @@ export default async function Product({
 }: ProductProps) {
   const dict = await getDictionary(lang, "products");
   const product = dict.find((product) => product.slug === slug);
-
+  const titleFormats = await getDictionary(lang, "product")
+  const findName = titleFormats.containerTitle
   if (!product) {
     notFound();
   }
@@ -109,7 +110,7 @@ export default async function Product({
           </div>
         </div>
       </div>
-      <OtherFormats slug={slug} products={dict} />
+      <OtherFormats titleFormats={ findName} slug={slug} products={dict} />
     </div>
   );
 }
