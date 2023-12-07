@@ -16,7 +16,8 @@ export function Values({ title, values }: ValuesProps) {
   ];
 
   return (
-    <div className="flex flex-col gap-6 lg:gap-10">
+    <div data-aos="fade-up"
+        className="flex flex-col gap-6 lg:gap-10">
       <div className="flex gap-2 lg:gap-4 items-center">
         <Image
           className="h-8 w-auto lg:h-14"

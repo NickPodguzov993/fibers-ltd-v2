@@ -45,10 +45,7 @@ export function Products({ title, products,buttonShow, buttonHide }: ProductsPro
 
   useEffect(() => {
     AOS.init({
-      offset: 200,
-      duration: 1000,
-      easing: 'ease-in-quad',
-      delay: 100,
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     });
   }, []);
 
@@ -58,13 +55,6 @@ export function Products({ title, products,buttonShow, buttonHide }: ProductsPro
 
   return (
     <div data-aos="fade-up"
-         data-aos-offset="200"
-         data-aos-delay="50"
-         data-aos-duration="500"
-         data-aos-easing="ease-in-out"
-         data-aos-mirror="true"
-         data-aos-once="false"
-         data-aos-anchor-placement="top-center"
 
          className="flex flex-col gap-4 lg:gap-8">
       <div className="flex items-center gap-2 lg:gap-4">

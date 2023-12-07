@@ -47,7 +47,10 @@ export function Clients({ title, clients }: ClientsProps) {
   }, []);
 
   return (
-    <div className="p-4 lg:p-8 -mx-4 lg:mx-0 flex flex-col gap-6 lg:gap-10 bg-light-violet rounded overflow-hidden">
+    <div data-aos="fade-up"
+         data-aos-delay="200"
+         data-aos-duration="1000"
+        className="p-4 lg:p-8 -mx-4 lg:mx-0 flex flex-col gap-6 lg:gap-10 bg-light-violet rounded overflow-hidden">
       <div className="flex gap-2 lg:gap-4 items-center">
         <Image
           className="h-8 w-auto lg:h-14"

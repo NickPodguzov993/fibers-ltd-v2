@@ -21,7 +21,10 @@ export function Directions({
     const [currentDir, setCurrentDir] = useState(0);
 
     return (
-        <div className="flex flex-col gap-4 lg:flex-row lg:gap-0">
+        <div data-aos="fade-up"
+             data-aos-delay="200"
+             data-aos-duration="1000"
+            className="flex flex-col gap-4 lg:flex-row lg:gap-0">
             <div className="flex flex-col gap-4 lg:flex-1 lg:pr-8 lg:justify-center">
                 <div className="flex gap-2 items-center">
                     <Image

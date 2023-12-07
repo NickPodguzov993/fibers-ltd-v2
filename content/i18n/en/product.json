@@ -1,3 +1,30 @@
 {
-  "containerTitle": "Marketing formats"
+  "containerTitle": "Marketing formats",
+  "titleLog": "Log in",
+  "email": "Email",
+  "password": "PassWord",
+  "forgotTitle": "Forgot password",
+  "buttonSing": "Sing up",
+  "invalidEmail": "Invalid email or password",
+  "termsConditions": "terms & conditions",
+  "privacyPolicy": "privacy policy",
+  "and": "and",
+
+
+  "personal": "Personal",
+  "company": "Company",
+
+
+  "nameWithStar": "Name",
+  "passwordWithStar": "Password*",
+  "emailWithStar": "Email*",
+  "repeatPassword": "Repeat password",
+  "socialNetwork": "Social network",
+  "phoneNumber": "Phone number",
+  "titlePrivacy": "By clicking the signup button you are agreeing to the",
+   "titleHaveAcc": "Already have an account?",
+  "companyName": "Company name*",
+  "companyAddress": "Company address*",
+  "valueAdded": "Value added tax, %*",
+  "info": "Additional info"
 }

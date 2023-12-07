@@ -1,8 +1,11 @@
+
 import clsx from "clsx";
 import Image from "next/image";
 
 import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
 import { titleFont } from "@/lib/fonts";
+import {AOS as AOSS} from 'aos';
+import 'aos/dist/aos.css';
 
 export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
   const dict = await getDictionary(lang, "aboutUs");
@@ -13,10 +16,12 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
     ["bg-light-violet", "bg-violet"],
   ];
 
+
+
   return (
     <div className="container pt-10 lg:pt-0 flex flex-col gap-6 lg:gap-40">
       <div className="flex flex-col gap-2 lg:gap-8">
-        <div className="flex gap-2 lg:gap-4 items-center justify-center">
+        <div  className="flex gap-2 lg:gap-4 items-center justify-center">
           <Image
             className="h-8 w-auto lg:h-14"
             src="/images/emojis/spark.png"
@@ -24,6 +29,7 @@ export default async function AboutUs({ params: { lang } }: PropsWithLanguage) {
             width={56}
             height={56}
           />
+
           <h2
             className={clsx(
               "text-[32px] lg:text-[64px] font-bold text-dark",

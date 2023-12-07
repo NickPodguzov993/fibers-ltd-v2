@@ -52,7 +52,8 @@ export function Reviews({ title, reviews }: ReviewsProps) {
   const colors = ["bg-pink", "bg-green", "bg-violet", "bg-green"];
 
   return (
-    <div className="relative flex flex-col gap-6 lg:gap-10 p-6 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
+    <div data-aos="fade-up"
+        className="relative flex flex-col gap-6 lg:gap-10 p-6 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
       <div className="flex gap-2 items-center">
         <Image
           className="h-8 w-auto lg:h-14"
