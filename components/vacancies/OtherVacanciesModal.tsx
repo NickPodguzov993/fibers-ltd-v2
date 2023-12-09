@@ -1,9 +1,11 @@
 "use client";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Modal } from "../shared/modal";
 import { PrimaryButton } from "../shared/buttons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type LoginModalProps = {
   vacancies: { title: string; slug: string }[];
@@ -14,6 +16,11 @@ export function OtherVacanciesModal({ vacancies }: LoginModalProps) {
   const pathName = usePathname();
   const lang = pathName.split("/")[1];
 
+    useEffect(() => {
+        AOS.init({
+            disable: false
+        });
+    }, []);
   return (
     <>
       <PrimaryButton

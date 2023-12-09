@@ -7,7 +7,6 @@ import { useMediaQuery } from "usehooks-ts";
 import { useKeenSlider } from "keen-slider/react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import { titleFont } from "@/lib/fonts";
 import { AdaptiveHeightPlugin } from "@/lib/slider";
 import { PrimaryButton } from "../shared/buttons";
@@ -45,7 +44,7 @@ export function Products({ title, products,buttonShow, buttonHide }: ProductsPro
 
   useEffect(() => {
     AOS.init({
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      disable: false
     });
   }, []);
 
@@ -100,7 +99,8 @@ export function Products({ title, products,buttonShow, buttonHide }: ProductsPro
         <div className="grid grid-cols-2 gap-4">
           {(showAll ? products : products.slice(0, 6)).map(
             ({ slug, ...rest }, idx) => (
-              <Link key={idx} href={[pathName, "products", slug].join("/")}>
+              <Link data-aos="fade-up" data-aos-delay={idx * 100} key={idx}
+                    href={[pathName, "products", slug].join("/")}>
                 <ProductCard {...rest} />
               </Link>
             )

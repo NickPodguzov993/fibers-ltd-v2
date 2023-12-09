@@ -1,3 +1,4 @@
+"use client"
 import clsx from "clsx";
 import Image from "next/image";
 import {titleFont} from "@/lib/fonts";
@@ -30,7 +31,8 @@ export function MainPartner({partner}: ContentProps) {
                 </h2>
             </div>
             <div className="p-2 lg:p-4 flex flex-col lg:flex-row rounded lg:rounded-xl bg-[#FFEDDB]">
-                <div className="flex-1 px-2 py-4 lg:p-8 flex flex-col gap-4">
+                <div data-aos="fade-up"
+                     data-aos-delay="200" className="flex-1 px-2 py-4 lg:p-8 flex flex-col gap-4">
                     <h3
                         className={clsx(
                             "text-[24px] lg:text-[32px] font-bold text-dark",
@@ -49,7 +51,8 @@ export function MainPartner({partner}: ContentProps) {
                         {partner.cta}
                     </a>
                 </div>
-                <div className="flex-1 flex bg-white rounded lg:rounded-lg items-center justify-center">
+                <div data-aos="fade-up"
+                     data-aos-delay="600" className="flex-1 flex bg-white rounded lg:rounded-lg items-center justify-center">
                     <Image
                         className="h-[240px] w-auto lg:h-[320px] object-cover"
                         src={partner.image}

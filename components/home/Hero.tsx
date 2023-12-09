@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { titleFont } from "@/lib/fonts";
 import { LinkButton, PrimaryButton } from "../shared/buttons";
 import Image from "next/image";
+import styles from './Hero.module.scss'
 
 type HeroProps = {
   title: string;
@@ -53,7 +54,7 @@ export function Hero({
         </div>
         <div className="relative self-center lg:ml-auto z-0">
           <Image
-            className="w-auto h-[320px] lg:h-[480px]"
+            className={styles.divName}
             src="/images/hamster.png"
             alt=""
             width={400}

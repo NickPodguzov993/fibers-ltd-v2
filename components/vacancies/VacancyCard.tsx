@@ -1,7 +1,9 @@
 "use client";
 import clsx from "clsx";
-import { MouseEvent } from "react";
+import {MouseEvent, useEffect} from "react";
 import { usePathname, useRouter } from "next/navigation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { titleFont } from "@/lib/fonts";
 
@@ -25,8 +27,14 @@ export function VacancyCard({
   const pathName = usePathname();
   const router = useRouter();
 
+  useEffect(() => {
+    AOS.init({
+      disable: false
+    });
+  }, []);
   return (
     <div
+        data-aos="fade-up"
       className="p-6 lg:p-8 flex flex-col gap-4 lg:gap-6 rounded border-2 border-primary transition-shadow cursor-pointer hover:shadow-card"
       onClick={() =>
         router.push(`/${pathName.split("/")[1]}/vacancies/${slug}`)

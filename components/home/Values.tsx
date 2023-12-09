@@ -1,7 +1,11 @@
+"use client"
+
 import clsx from "clsx";
 import Image from "next/image";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { titleFont } from "@/lib/fonts";
+import {useEffect} from "react";
 
 type ValuesProps = {
   title: string;
@@ -14,6 +18,12 @@ export function Values({ title, values }: ValuesProps) {
     ["bg-light-pink", "bg-pink"],
     ["bg-light-green", "bg-green"],
   ];
+
+    useEffect(() => {
+        AOS.init({
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        });
+    }, []);
 
   return (
     <div data-aos="fade-up"
@@ -33,6 +43,8 @@ export function Values({ title, values }: ValuesProps) {
       <div className="flex flex-col gap-4 lg:grid grid-cols-2">
         {values.map(({ title, description, image }, idx) => (
           <div
+              data-aos="fade-up"
+              data-aos-delay="200"
             key={title}
             className={clsx(
               "flex flex-col p-2 lg:p-4 rounded",

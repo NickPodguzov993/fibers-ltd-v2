@@ -1,8 +1,9 @@
 "use client";
 import clsx from "clsx";
 import Image from "next/image";
-import {useState} from "react";
-
+import {useEffect, useState} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {titleFont} from "@/lib/fonts";
 import {Tab} from "../shared/tab";
 
@@ -20,12 +21,19 @@ export function Directions({
                            }: DirectionsProps) {
     const [currentDir, setCurrentDir] = useState(0);
 
+    useEffect(() => {
+        AOS.init({
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        });
+    }, []);
+
     return (
-        <div data-aos="fade-up"
-             data-aos-delay="200"
+        <div
              data-aos-duration="1000"
             className="flex flex-col gap-4 lg:flex-row lg:gap-0">
-            <div className="flex flex-col gap-4 lg:flex-1 lg:pr-8 lg:justify-center">
+            <div data-aos="fade-up"
+                 data-aos-delay="200"
+                className="flex flex-col gap-4 lg:flex-1 lg:pr-8 lg:justify-center">
                 <div className="flex gap-2 items-center">
                     <Image
                         className="h-8 w-auto lg:h-14"
@@ -42,7 +50,9 @@ export function Directions({
                     {description}
                 </p>
             </div>
-            <div className="lg:flex-1 p-8 lg:p-16 -mx-4 lg:mx-0 bg-light-violet flex flex-col rounded gap-4 lg:gap-8">
+            <div data-aos="fade-up"
+                 data-aos-delay="600"
+                className="lg:flex-1 p-8 lg:p-16 -mx-4 lg:mx-0 bg-light-violet flex flex-col rounded gap-4 lg:gap-8">
                 <div className="flex flex-col gap-2 text-center">
                     <h3
                         className={clsx(
