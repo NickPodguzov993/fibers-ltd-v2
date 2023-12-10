@@ -4,6 +4,10 @@
     height: 480px;
     animation: move 3s infinite ease alternate;
 
+    @media (min-width: 1024px) {
+        height: 480px;
+    }
+
     @keyframes move {
         from{
             transform: translateY(-10px);
@@ -14,12 +18,57 @@
     }
 }
 
-.s {
-    margin-top: 50px;
+.ring1 {
+    // absolute -right-20 lg:-right-32 top-10 lg:top-16 w-auto h-[250px] lg:h-[380px] -z-10
+    position: absolute;
+    top: 2.5rem;
+    right: -5rem;
     width: auto;
-    height: 480px;
-    background-color: aqua;
+    z-index: -10;
+    height: 250px;
+    animation: move 5s infinite ease alternate;
+
+    @keyframes move {
+        from{
+            transform: translateY(-10px);
+        }
+        to{
+            transform: translateY(10px);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        top: 4rem;
+        right: -8rem;
+        height: 380px;
+    }
 }
+
+.ring2 {
+    //absolute bottom-0 -left-20 lg:-left-32 w-auto h-[180px] lg:h-[280px] z-10
+    position: absolute;
+    bottom: 0;
+    left: -5rem;
+    z-index: 10;
+    width: auto;
+    height: 180px;
+    @media (min-width: 1024px) {
+        left: -8rem;
+        height: 280px;
+    }
+
+    animation: move 5s infinite ease alternate;
+
+    @keyframes move {
+        from{
+            transform: translateY(-10px);
+        }
+        to{
+            transform: translateY(10px);
+        }
+    }
+}
+
 
 
 

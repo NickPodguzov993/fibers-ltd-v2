@@ -7,6 +7,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useKeenSlider } from "keen-slider/react";
 import { titleFont } from "@/lib/fonts";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type OtherFormatsProps = {
   titleFormats:string
@@ -17,6 +19,8 @@ type OtherFormatsProps = {
     image: string;
   }[];
 };
+
+
 
 export function OtherFormats({ slug, products,titleFormats }: OtherFormatsProps) {
   const pathName = usePathname();
@@ -48,8 +52,14 @@ export function OtherFormats({ slug, products,titleFormats }: OtherFormatsProps)
     setDomReady(true);
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      disable: false
+    });
+  }, []);
+
   return (
-    <div className="relative flex flex-col gap-10 py-6 px-3 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
+    <div data-aos="fade-up" className="relative flex flex-col gap-10 py-6 px-3 lg:p-16 -mx-4 lg:-mx-0 bg-light-violet rounded overflow-hidden">
       <div className="flex gap-2 lg:gap-4 items-center justify-center">
         <Image
           className="h-8 w-auto lg:h-14"

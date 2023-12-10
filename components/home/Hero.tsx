@@ -61,15 +61,14 @@ export function Hero({
             height={480}
             style={{ width: "auto" }}
           />
-          <Image
-            className="absolute -right-20 lg:-right-32 top-10 lg:top-16 w-auto h-[250px] lg:h-[380px] -z-10"
+          <Image className={styles.ring1}
             src="/images/hamster-ring-r.png"
             alt=""
             width={380}
             height={380}
           />
           <Image
-            className="absolute bottom-0 -left-20 lg:-left-32 w-auto h-[180px] lg:h-[280px] z-10"
+              className={styles.ring2}
             src="/images/hamster-ring-l.png"
             alt=""
             width={280}
