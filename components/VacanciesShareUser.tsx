@@ -9,7 +9,15 @@ import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export const VacanciesShareUser = ({slug, lang, vacancy,vacancies}) => {
+export const VacanciesShareUser = ({sendCV,
+                                       other,
+                                       messages,
+                                       contactUs,
+                                       touchWithYou,
+                                       slug,
+                                       lang,
+                                       vacancy,
+                                       vacancies}) => {
     useEffect(() => {
         AOS.init({
             disable: false
@@ -40,12 +48,12 @@ export const VacanciesShareUser = ({slug, lang, vacancy,vacancies}) => {
                     ))}
                     <div className="flex flex-col gap-4">
                         <PrimaryButton className="lg:w-fit lg:px-8 lg:py-6">
-                            Send CV
+                            {sendCV}
                         </PrimaryButton>
                         <div className="flex gap-2.5 items-center p-4 bg-light-violet rounded-[16px]">
                             <div>img</div>
                             <p className="font-bold leading-paragraph text-black">
-                                We will get in touch with you within the next 3-4 business days
+                                {touchWithYou}
                             </p>
                         </div>
                     </div>
@@ -58,7 +66,7 @@ export const VacanciesShareUser = ({slug, lang, vacancy,vacancies}) => {
                                 titleFont.className
                             )}
                         >
-                            Other vacancies
+                            {other}
                         </h2>
                         <div className="flex flex-col px-2">
                             {vacancies
@@ -83,9 +91,9 @@ export const VacanciesShareUser = ({slug, lang, vacancy,vacancies}) => {
                     </div>
                     <div className="p-4 flex flex-col gap-4 text-center">
                         <p className="lg:text-[18px] font-bold leading-paragraph text-dark">
-                            Did we miss something? Write to us
+                            {messages}
                         </p>
-                        <PrimaryButton>Contact us</PrimaryButton>
+                        <PrimaryButton>{contactUs}</PrimaryButton>
                     </div>
                 </div>
             </div>

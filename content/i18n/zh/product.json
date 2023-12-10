@@ -26,5 +26,11 @@
   "companyName": "公司名稱*",
   "companyAddress": "公司地址*",
   "valueAdded": "加值稅, %*",
-  "info": "附加資訊"
+  "info": "附加資訊",
+
+  "sendCV": "發送履歷",
+  "other": "其他職位空缺",
+  "messages": "我們錯過了什麼嗎？寫信給我們",
+  "contactUs": "聯絡我們",
+  "touchWithYou": "我們將在接下來的 3-4 個工作天內與您聯繫"
 }

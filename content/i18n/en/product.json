@@ -26,5 +26,12 @@
   "companyName": "Company name*",
   "companyAddress": "Company address*",
   "valueAdded": "Value added tax, %*",
-  "info": "Additional info"
+  "info": "Additional info",
+
+
+  "sendCV": " Send CV",
+  "other": " Other vacancies",
+  "messages": "Did we miss something? Write to us",
+  "contactUs": " Contact us",
+  "touchWithYou": " We will get in touch with you within the next 3-4 business days"
 }
