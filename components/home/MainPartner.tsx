@@ -5,7 +5,6 @@ import {titleFont} from "@/lib/fonts";
 
 
 type ContentProps = {
-    ownPartner: string
     partner: { title: string; description: string; cta: string; link: string; link: string; image: string;owrPartner:string };
 };
 
