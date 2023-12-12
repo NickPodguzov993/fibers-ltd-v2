@@ -1,6 +1,4 @@
 import { PropsWithLanguage, getDictionary } from "@/lib/i18n";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {
   Clients,
   Directions,
